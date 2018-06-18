@@ -12,36 +12,42 @@ StyleTemplate="$1"
 StyleCss="$2"
 Title=`echo $3 | cut -f1 -d'.'`
 
+if [[ $# -lt 1 || $# -gt 3 || $# -eq 2 ]]; then
+		echo "============================================================="
+		echo "==> md2htmlpdf require 1 or 3 arguments"
+		echo "============================================================="
+		echo "Usage with 1 argument : md2htmlpdf markdownFile.md"
+		echo "Example : md2htmlpdf examples/proportionnalite.md"
+		echo "============================================================="
+		echo "Usage with 3 arguments : md2htmlpdf templateFile.template cssFile.css markdownFile.md"
+		echo "1) Template file to apply"
+		echo "2) Css file to apply"
+		echo "3) Markdown file to convert"
+		echo "Example : md2htmlpdf templates/lesson.template css/lesson.css examples/proportionnalite.md"
+		echo "============================================================="
+		exit 1
+fi
+
 if [ $# -eq 1 ]; then
 	Title=`echo $1 | cut -f1 -d'.'`
 	StyleTemplate="$HOME/.config/md2htmlpdf/templates/default.template"
 	StyleCss="$HOME/.config/md2htmlpdf/css/default.css"
-	echo "============================================"
-	echo "You invoque md2htmlpdf with default template and css files"
-	echo "Processing Markdown file : "$Title".md"
-	echo "============================================"
+	echo "============================================================="
+	echo "=> You invoque md2htmlpdf with default template and css files"
+	echo "============================================================="
 fi
 
-if [ $# -gt 3 ]; then
-		echo "Usage : md2htmlpdf require 3 arguments:"
-		echo "1) Template file to apply"
-		echo "2) Css file to apply"
-		echo "3) Markdown file to convert"
-		echo "Example : md2htmlpdf templates/lesson.template css/style.css examples/proportionnalite.md"
-		exit 0
-fi
-
-echo "============================================"
+echo "============================================================="
+echo "=> Processing Markdown file : "$Title".md"
 echo "=> Make html file : $Title.htlm"
 echo "=> With Template file : $StyleTemplate"
 echo "=> And CSS file : $StyleCss"
-echo "============================================"
+echo "============================================================="
 
 pandoc "$Title".md --from=markdown+emoji --to=html5 --self-contained --template="$StyleTemplate" -c "$StyleCss" --number-sections --standalone --webtex="http://latex.codecogs.com/svg.latex?" -o "$Title".html
 
-echo "============================================"
+echo "============================================================="
 echo "=> Make PDF file : $Title.pdf ..."
-echo "============================================"
+echo "============================================================="
 
 wkhtmltopdf --encoding 'utf-8' --print-media-type --footer-line --footer-spacing 2 --footer-font-name "$FooterFont" --footer-font-size "$FooterSize" --footer-left "$Author" --footer-right "[page] / [topage]" --margin-top "$TopMargin" --margin-left "$LeftMargin" --margin-right "$RightMargin" --margin-bottom "$BottomMargin" -O "$PageOrientation" -s "$PageSize" --javascript-delay 500 "$Title".html "$Title".pdf
-
