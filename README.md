@@ -39,17 +39,17 @@ All [pandoc extensions](https://pandoc.org/MANUAL.html#pandocs-markdown) for mar
 
 At start of markdown file put a [Pandoc Title Block](https://pandoc.org/MANUAL.html#metadata-blocks) to describe your document like this :
 
-% The Wonderful title
-% My Name
-% 20/04/2018
+% The Wonderful title  
+% My Name  
+% 20/04/2018  
 
 This block supports multilines :
 
-% The Wonderful title
-  You can have multilines title like this
-% My Name
-  And my friend
-  And another one
+% The Wonderful title  
+  You can have multilines title like this  
+% My Name  
+  And my friend  
+  And another one  
 % 20/04/2018
 
 After a blank line you can write your document using markdown syntax. Look examples files in example directory.
