@@ -40,7 +40,7 @@ Example : md2htmlpdf templates/lesson.template css/lesson.css examples/proportio
 
 All [pandoc extensions](https://pandoc.org/MANUAL.html#pandocs-markdown) for markdown are usable (equation, emoji, tables, ...)
 
-At start of markdown file put a [Pandoc Title Block](https://pandoc.org/MANUAL.html#metadata-blocks) to describe your document like this :
+At the beginning of markdown file put a [Pandoc Title Block](https://pandoc.org/MANUAL.html#metadata-blocks) to describe your document like this :
 
 % The Wonderful title  
 % My Name  
@@ -49,10 +49,10 @@ At start of markdown file put a [Pandoc Title Block](https://pandoc.org/MANUAL.h
 This block supports multilines :
 
 % The Wonderful title  
-  You can have multilines title like this  
+  You can have a multilines title like this  
 % My Name  
   And my friend  
   And another one  
 % 20/04/2018
 
-After a blank line you can write your document using markdown syntax. Look examples files in example directory.
+After a blank line you can write your document using markdown syntax. Look example files in examples directory.
