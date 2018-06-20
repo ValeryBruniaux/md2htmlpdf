@@ -3,14 +3,14 @@ md2thmlpdf can convert markdown files to HTML and PDF with predefined styles.
 
 # What to do with md2htmlpdf ?
 
-The goal is to replace Latex to produce standard documents like lessons, articles, etc.
-Latex is a nice tool but styling with CSS is more easy and flexible than old Latex syntax.
+The purpose is to replace Latex to produce standard documents like lessons, articles, etc.
+Latex is a good tool but styling with CSS is easier and more flexible than old Latex syntax.
 
-With md2htmlpdf, you edit your style in css file, edit contents with markdown and you can generate beautiful documents in HTML and PDF.
+With md2htmlpdf, you edit your style in CSS file, edit contents with markdown and you can generate beautiful documents in HTML and PDF.
 
-HTML and PDF files are pretty the same, so you can put HTML file to the web or print PDF file for your students.
+HTML and PDF files look pretty the same, so you can put the HTML file on the web or print the PDF file for your students.
 
-# What I need to install ?
+# What do I need to install ?
 
 md2htmlpdf uses 2 external tools :
 
@@ -23,7 +23,8 @@ If you want to use equations, you need **internet access** to reach the transfor
 
 # How to use md2htmlpdf ?
 
-md2htmlpdf requires 1 or 3 arguments
+md2htmlpdf requires 1 or 3 arguments.
+
 Usage with 1 argument : md2htmlpdf markdownFile.md
 Example : md2htmlpdf examples/proportionnalite.md
 
