@@ -26,12 +26,14 @@ If you want to use equations, you need **internet access** to reach the transfor
 md2htmlpdf requires 1 or 3 arguments.
 
 Usage with 1 argument : md2htmlpdf markdownFile.md
+
 Example : md2htmlpdf examples/proportionnalite.md
 
 Usage with 3 arguments : md2htmlpdf templateFile.template cssFile.css markdownFile.md
 1) Template file to apply
 2) Css file to apply
 3) Markdown file to convert
+
 Example : md2htmlpdf templates/lesson.template css/lesson.css examples/proportionnalite.md
 
 # Syntax for markdown file ?
