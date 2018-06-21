@@ -133,7 +133,7 @@ Il ne faut pas utiliser la technique du **produit en croix** car en l'appliquant
 - Pour aller de **bas en haut** on fait ***valeur / coeff. de proportionnalité*** ou bien on cherche le coefficient de proportionnalité pour aller dans l'autre sens en calculant ***1 / coeff. de proportionnalité***
 :::
 
-# Exercices
+# Exercices{.pagebreakbefore}
 ## Exercice 1
 
 Sur la notice d'un flacon de sirop pour la toux de 250 mL on peut lire : 0,3 mg de produit actif pour 5 mL. Calculez la masse de produit actif dans le flacon.

@@ -59,6 +59,7 @@ h1 {
 	margin-top : 1rem;
 	margin-bottom : 0.5rem;
 	border-bottom : 1px solid grey;
+    background-color: lightgrey;
 }
 
 
@@ -153,13 +154,27 @@ p, td, div, ul, li {
 
 @media print
 {
-    h1, h2, h3, h4
+    p
     {
-        page-break-after: avoid;
+        widows: 1;
+        orphans: 1;
+    }
+    .pagebreakafter
+    {
+        page-break-after: always;
+    }
+    .pagebreakbefore
+    {
+        background-color: red;
+        page-break-before: always;
     }
     div, code, pre, blockquote, li, span, table
     {
         page-break-inside: avoid;
+    }
+    h1, h2, h3, h4
+    {
+        page-break-after: avoid;
     }
 }
 

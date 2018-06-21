@@ -51,6 +51,7 @@ font-size: 150%;
 margin-top : 1rem;
 margin-bottom : 0.5rem;
 border-bottom : 1px solid grey;
+background-color: lightgrey;
 }
 h2 {
 font-size: 125%;
@@ -125,13 +126,27 @@ margin: 0.75cm 1cm 1cm 1cm;
 }
 @media print
 {
-h1, h2, h3, h4
+p
 {
-page-break-after: avoid;
+widows: 1;
+orphans: 1;
+}
+.pagebreakafter
+{
+page-break-after: always;
+}
+.pagebreakbefore
+{
+background-color: red;
+page-break-before: always;
 }
 div, code, pre, blockquote, li, span, table
 {
 page-break-inside: avoid;
+}
+h1, h2, h3, h4
+{
+page-break-after: avoid;
 }
 }
 .pagebreakbefore {
@@ -389,7 +404,7 @@ Par exemple les grandeurs <strong><em>x</em></strong> et <strong><em>y</em></str
 <li>Pour aller de <strong>bas en haut</strong> on fait <strong><em>valeur / coeff. de proportionnalité</em></strong> ou bien on cherche le coefficient de proportionnalité pour aller dans l’autre sens en calculant <strong><em>1 / coeff. de proportionnalité</em></strong></li>
 </ul>
 </div>
-<h1 id="exercices"><span class="header-section-number">9</span> Exercices</h1>
+<h1 id="exercices" class="pagebreakbefore"><span class="header-section-number">9</span> Exercices</h1>
 <h2 id="exercice-1"><span class="header-section-number">9.1</span> Exercice 1</h2>
 <p>Sur la notice d’un flacon de sirop pour la toux de 250 mL on peut lire : 0,3 mg de produit actif pour 5 mL. Calculez la masse de produit actif dans le flacon.</p>
 <p>Donnez le nom des deux grandeurs que vous devez utiliser pour résoudre ce problème ? (une des deux grandeurs est souvent celle qui est demandée, d’ailleurs, <strong>mettez cette grandeur recherchée dans la dernière ligne du tableau</strong> pour faciliter le raisonnement)<br />
