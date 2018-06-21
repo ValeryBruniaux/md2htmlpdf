@@ -19,7 +19,7 @@ md2htmlpdf uses 2 external tools :
 
 You can install theese tools with your favorite distribution.
 
-If you want to use equations, you need **internet access** to reach the transform app [on codecogs](http://latex.codecogs.com/svg.latex)
+If you want to use equations, you need **internet access** to reach the transform application [codecogs](http://latex.codecogs.com/svg.latex)
 
 # How to use md2htmlpdf ?
 
@@ -37,6 +37,8 @@ md2htmlpdf requires 1 or 3 arguments.
 	**Example** : *md2htmlpdf templates/lesson.template css/lesson.css examples/proportionnalite.md*
 
 # Syntax for markdown file ?
+
+## Header and Pandoc Title Block
 
 All [pandoc extensions](https://pandoc.org/MANUAL.html#pandocs-markdown) for markdown are usable (equation, emoji, tables, ...)
 
@@ -56,3 +58,13 @@ This block supports multilines :
 % 20/04/2018
 
 After a blank line you can write your document using markdown syntax. Look example files in examples directory.
+
+## Pandoc Markdown extensions and tips
+
+You can edit your text using the [standard Markdown syntax](http://commonmark.org/help/).
+
+But Pandoc includes a lot of extensions that are veru useful like [GFM - GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown). So you can write easily : code blocks, tasks lists, tables, [emojis](https://www.webpagefx.com/tools/emoji-cheat-sheet/) :smiley:, strikethrough...
+
+# Fonts examples
+
+You can find Fonts used in the examples in the Fonts directory.
