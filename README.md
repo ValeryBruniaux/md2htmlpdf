@@ -109,7 +109,7 @@ In this section you can set values for **widows** and **orphans** and choose if 
 But you can also use the classes **.pagebreakbefore** and **.pagebreakafter** in your Markdown file to force a page break everywhere you want. Just add {.pagebreakbefore} after an header, like this :
 
 ```
-# Exercices{.pagebreakbefore}
+# Wonderful title{.pagebreakbefore}
 ```
 
 You can also affect theese 2 classes at every pieces of text using previous tip.
