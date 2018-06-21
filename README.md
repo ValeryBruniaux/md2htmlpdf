@@ -100,6 +100,20 @@ text-decoration: underline;
 }
 ```
 
+### Force page breaks (before or after)
+
+You can use previous tip to force page breaks. At the end of the default CSS file you can find the **@media print** section.
+
+In this section you can set values for **widows** and **orphans** and choose if you want avoid page break after title.
+
+But you can also use the classes **.pagebreakbefore** and **.pagebreakafter** in your Markdown file to force a page break everywhere you want. Just add {.pagebreakbefore} after an header, like this :
+
+```
+# Exercices{.pagebreakbefore}
+```
+
+You can also affect theese 2 classes at every pieces of text using previous tip.
+
 # Fonts examples
 
 You can find fonts used in the examples in the [Fonts directory](https://github.com/ValeryBruniaux/md2htmlpdf/tree/master/fonts).
