@@ -85,7 +85,7 @@ Insert blank lines in Markdown is not allways easy. Here you can add a
 
 ### Your own style :+1: !
 
-One Pandoc Markdown extension is very powerful. You can affect some text with a class name and decorate it like you want in the CSS file.
+One Pandoc Markdown extension is very powerful. You can affect some text with a **class name** and **decorate** it like you want in the **CSS file**.
 
 If you write in your Markdown file :
 bla bla bla **[your important text here]{.inlinewarning}** bla bla bla.
