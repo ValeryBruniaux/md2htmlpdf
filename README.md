@@ -83,6 +83,24 @@ Use the [standard Latex syntax](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
 Insert blank lines in Markdown is not allways easy. Here you can add a  
 \ with two spaces at the beginning of the line.
 
+### Your own style :+1: !
+
+One Pandoc Markdown extension is very powerful. You can affect some text with a class name and decorate it like you want in CSS file.
+
+In your Markdown file :
+
+bla bla bla [your important text here]{.inlinewarning} bla bla bla.
+
+*your important text here* become a span with the class name **inlinewarning** so you can style this piece of text in the CSS file.
+
+In CSS file :
+```css
+.inlinewarning {
+background-color: yellow;
+text-decoration: underline;
+}
+```
+
 # Fonts examples
 
 You can find Fonts used in the examples in the Fonts directory.
