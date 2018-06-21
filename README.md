@@ -64,7 +64,7 @@ After a blank line you can write your document using markdown syntax. Look examp
 You can edit your text using the [standard Markdown syntax](http://commonmark.org/help/).
 But Pandoc includes a lot of extensions that are very useful like [GFM - GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown). So you can write easily : code blocks, tasks lists, tables, [emojis](https://www.webpagefx.com/tools/emoji-cheat-sheet/) :smiley:, strikethrough...
 
-The example file proportionnalite.md show you how to use them.
+The example file [proportionnalite.md](https://github.com/ValeryBruniaux/md2htmlpdf/blob/master/examples/proportionnalite.md) show you how to use them.
 
 ## Tips
 
