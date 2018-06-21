@@ -85,10 +85,10 @@ Insert blank lines in Markdown is not allways easy. Here you can add a
 
 ### Your own style :+1: !
 
-One Pandoc Markdown extension is very powerful. You can affect some text with a class name and decorate it like you want in CSS file.
+One Pandoc Markdown extension is very powerful. You can affect some text with a class name and decorate it like you want in the CSS file.
 
 In your Markdown file :
-bla bla bla [your important text here]{.inlinewarning} bla bla bla.
+bla bla bla **[your important text here]{.inlinewarning}** bla bla bla.
 
 ***your important text here*** become a span with the class name **inlinewarning** so you can style this piece of text in the CSS file.
 
@@ -102,4 +102,4 @@ text-decoration: underline;
 
 # Fonts examples
 
-You can find Fonts used in the examples in the [Fonts directory](https://github.com/ValeryBruniaux/md2htmlpdf/tree/master/fonts).
+You can find fonts used in the examples in the [Fonts directory](https://github.com/ValeryBruniaux/md2htmlpdf/tree/master/fonts).
