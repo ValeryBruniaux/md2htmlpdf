@@ -74,6 +74,9 @@ The example file proportionnalite.md show you how to use them.
 You can add a warning block by using this syntax.  
 :::
 
+### Mathematical expressions
+
+Use the [standard Latex syntax](https://en.wikibooks.org/wiki/LaTeX/Mathematics) : $coeff_{1->2} = \frac{1}{coeff_{2->1}}$
 
 
 # Fonts examples
