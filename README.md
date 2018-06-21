@@ -90,7 +90,7 @@ One Pandoc Markdown extension is very powerful. You can affect some text with a 
 In your Markdown file :
 bla bla bla [your important text here]{.inlinewarning} bla bla bla.
 
-*your important text here* become a span with the class name **inlinewarning** so you can style this piece of text in the CSS file.
+***your important text here*** become a span with the class name **inlinewarning** so you can style this piece of text in the CSS file.
 
 In CSS file :
 ```css
