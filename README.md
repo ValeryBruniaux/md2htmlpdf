@@ -69,9 +69,12 @@ The example file proportionnalite.md show you how to use them.
 ## Tips
 
 ### Warning block
-::: warning
-You can add a warning block by using this syntax.
+
+::: warning  
+You can add a warning block by using this syntax.  
 :::
+
+
 
 # Fonts examples
 
