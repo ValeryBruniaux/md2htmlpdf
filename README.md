@@ -62,9 +62,9 @@ After a blank line you can write your document using markdown syntax. Look examp
 ## Pandoc Markdown extensions
 
 You can edit your text using the [standard Markdown syntax](http://commonmark.org/help/).
-But Pandoc includes a lot of extensions that are very useful like [GFM - GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown). So you can write easily : code blocks, tasks lists, tables, [emojis](https://www.webpagefx.com/tools/emoji-cheat-sheet/) :smiley:, strikethrough...
+But Pandoc includes a lot of extensions that are very useful like [GFM - GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown). So you can easily write : code blocks, task lists, tables, [emojis](https://www.webpagefx.com/tools/emoji-cheat-sheet/) :smiley:, strikethrough...
 
-The example file [proportionnalite.md](https://raw.githubusercontent.com/ValeryBruniaux/md2htmlpdf/master/examples/proportionnalite.md) show you how to use them.
+The example file [proportionnalite.md](https://raw.githubusercontent.com/ValeryBruniaux/md2htmlpdf/master/examples/proportionnalite.md) shows you how to use them.
 
 ## Tips
 
@@ -80,17 +80,17 @@ Use the [standard Latex syntax](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
 
 ### Blank line
 
-Insert blank lines in Markdown is not allways easy. Here you can add a  
+Insert blank lines in Markdown is not always easy. Here you can add a  
 \ with two spaces at the beginning of the line.
 
 ### Your own style :+1: !
 
-One Pandoc Markdown extension is very powerful. You can affect some text with a **class name** and **decorate** it like you want in the **CSS file**.
+One Pandoc Markdown extension is very powerful. You can assign a **class name** to a piece of text and **decorate** it as you want in the **CSS file**.
 
 If you write in your Markdown file :
 bla bla bla **[your important text here]{.inlinewarning}** bla bla bla.
 
-***your important text here*** become a span with the class name **inlinewarning** so you can style this piece of text in the CSS file.
+***your important text here*** becomes a span with the class name **inlinewarning**, so you can style this piece of text in the CSS file.
 
 In CSS file :
 ```css
@@ -102,17 +102,17 @@ text-decoration: underline;
 
 ### Force page breaks (before or after)
 
-You can use previous tip to force page breaks. At the end of the default CSS file you can find the **@media print** section.
+You can use the previous tip to force page breaks. At the end of the default CSS file you can find the **@media print** section.
 
-In this section you can set values for **widows** and **orphans** and choose if you want avoid page break after title.
+In this section you can set values for **widows** and **orphans** and choose if you want to avoid a page break after the titles.
 
-But you can also use the classes **.pagebreakbefore** and **.pagebreakafter** in your Markdown file to force a page break everywhere you want. Just add {.pagebreakbefore} after an header, like this :
+But you can also use the classes **.pagebreakbefore** and **.pagebreakafter** in your Markdown file to force a page break everywhere you want. Just add {.pagebreakbefore} after a title, like this :
 
 ```
 # Wonderful title{.pagebreakbefore}
 ```
 
-You can also affect theese 2 classes at every pieces of text using previous tip.
+You can also assign these 2 classes to any piece of text using the previous tip.
 
 # Fonts examples
 
