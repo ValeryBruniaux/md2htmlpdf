@@ -15,7 +15,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-Author="Valéry Bruniaux - Lycée Arthur Rimbaud"
+Author=""
 PageSize="A4"
 PageOrientation="Portrait"
 TopMargin="0.75cm"
@@ -65,5 +65,8 @@ pandoc "$Title".md --from=markdown+emoji --to=html5 --self-contained --template=
 echo "============================================================="
 echo "=> Make PDF file : $Title.pdf ..."
 echo "============================================================="
+
+Author=$(head -2 "$Title".md | tail -1)
+Author=${Author:2}
 
 wkhtmltopdf --encoding 'utf-8' --print-media-type --footer-line --footer-spacing 2 --footer-font-name "$FooterFont" --footer-font-size "$FooterSize" --footer-left "$Author" --footer-right "[page] / [topage]" --margin-top "$TopMargin" --margin-left "$LeftMargin" --margin-right "$RightMargin" --margin-bottom "$BottomMargin" -O "$PageOrientation" -s "$PageSize" --javascript-delay 500 "$Title".html "$Title".pdf

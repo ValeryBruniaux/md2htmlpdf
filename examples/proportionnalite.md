@@ -1,5 +1,5 @@
 % La Proportionnalité
-% Valéry Bruniaux
+% Valéry Bruniaux - Lycée Arthur Rimbaud
 % 25/04/2018
 
 # Qu'est-ce-que la Proportionnalité ?
