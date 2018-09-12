@@ -28,7 +28,10 @@ echo "================================================"
 
 mkdir $HOME/.config/md2htmlpdf
 cp -R -i css $HOME/.config/md2htmlpdf/
+ln -s -i $HOME/.config/md2htmlpdf/css/lesson.css $HOME/.config/md2htmlpdf/css/default.css
+
 cp -R -i templates $HOME/.config/md2htmlpdf/
+ln -s -i $HOME/.config/md2htmlpdf/templates/lesson.template $HOME/.config/md2htmlpdf/templates/default.template
 
 echo "================================================"
 echo "==> Install completed ..."
