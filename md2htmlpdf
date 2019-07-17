@@ -28,12 +28,15 @@ StyleTemplate="$1"
 StyleCss="$2"
 Title=`echo $3 | cut -f1 -d'.'`
 
-if [[ $# -lt 1 || $# -gt 3 || $# -eq 2 ]]; then
+if [[ $# -lt 1 || $# -gt 3 ]]; then
 		echo "============================================================="
-		echo "==> md2htmlpdf require 1 or 3 arguments"
+		echo "==> md2htmlpdf require 1, 2 or 3 arguments"
 		echo "============================================================="
 		echo "Usage with 1 argument : md2htmlpdf markdownFile.md"
 		echo "Example : md2htmlpdf examples/proportionnalite.md"
+		echo "============================================================="
+		echo "Usage with 2 arguments : md2htmlpdf cssFile.css markdownFile.md"
+		echo "Example : md2htmlpdf css/lesson.css examples/proportionnalite.md"
 		echo "============================================================="
 		echo "Usage with 3 arguments : md2htmlpdf templateFile.template cssFile.css markdownFile.md"
 		echo "1) Template file to apply"
@@ -50,6 +53,15 @@ if [ $# -eq 1 ]; then
 	StyleCss="$HOME/.config/md2htmlpdf/css/default.css"
 	echo "============================================================="
 	echo "=> You invoque md2htmlpdf with default template and css files"
+	echo "============================================================="
+fi
+
+if [ $# -eq 2 ]; then
+	StyleCss="$1"
+	Title=`echo $2 | cut -f1 -d'.'`
+	StyleTemplate="$HOME/.config/md2htmlpdf/templates/default.template"
+	echo "============================================================="
+	echo "=> You invoque md2htmlpdf with default template file"
 	echo "============================================================="
 fi
 
