@@ -136,9 +136,11 @@ ul li:before {
 	text-align: left;
 }
 
-img {
+img, figure {
 	margin:auto;
 	display: block;
+	text-align: center;
+	font-style: italic;
 }
 
 p, td, div, ul, li {
