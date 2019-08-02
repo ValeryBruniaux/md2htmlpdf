@@ -22,6 +22,7 @@ body {
 	font-weight: normal;
 	font-style: normal;
 	color: black;
+	overflow: auto;
 /*    text-rendering: geometricPrecision;
     text-rendering: optimizeLegibility;*/
 /*    width: 210mm;*/
@@ -80,12 +81,6 @@ h3 {
 	margin-bottom : -0.20rem;
 }
 
-h4, h5, h6 {
-	font-size: 100%;
-	margin-top : 0.5rem;
-	margin-bottom : -0.2rem;
-}
-
 .header-section-number:after {
 	content: ') ';
 }
@@ -142,11 +137,47 @@ ul li:before {
 	text-align: left;
 }
 
-img, figure {
-	margin:auto;
-	display: block;
+img {
+	margin: auto;
+	text-align: center;
+}
+
+figure {
 	text-align: center;
 	font-style: italic;
+	font-size: smaller;
+	text-indent: 0;
+	margin: 0em;
+	padding: 0em;
+}
+
+figcaption {
+}
+
+.center {
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+
+.floatleft {
+	float: left;
+	text-align: center;
+	font-style: italic;
+	font-size: smaller;
+	text-indent: 0;
+	margin: 0;
+	padding: 0em 0.5em 0 0;
+}
+
+.floatright {
+	float: right;
+	text-align: center;
+	font-style: italic;
+	font-size: smaller;
+	text-indent: 0;
+	margin: 0;
+	padding: 0 0 0 0.5em;
 }
 
 p, td, div, ul, li {
