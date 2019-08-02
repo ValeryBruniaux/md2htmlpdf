@@ -68,6 +68,20 @@ The example file [proportionnalite.md](https://raw.githubusercontent.com/ValeryB
 
 ## Tips
 
+### Images floating
+- ![](theImage){.floatleft} : Image float to left and text fill the right
+- ![](theImage){.floatright} : Image float to right and text fill the left
+- ![](theImage){.center} : Image is a block in the center
+
+If you want a caption for this image you need to wrap the content in a span like this :
+[![](theImage)  <= insert 2 blank spaces at the end of line to break the flow!!!
+The caption !]{.floatleft} : Image float to left with caption under and text fill the right
+
+[![](theImage)  <= insert 2 blank spaces at the end of line to break the flow!!!
+The caption !]{.floatright} : Image float to right with caption under and text fill the left
+
+![The caption](theImage) : Image is a block in the center with caption under
+
 ### Warning block
 
 ::: warning  
@@ -76,7 +90,7 @@ You can add a warning block by using this syntax.
 
 ### Mathematical expressions
 
-Use the [standard Latex syntax](https://en.wikibooks.org/wiki/LaTeX/Mathematics) : $math expression here$
+Use the [standard Latex syntax](https://en.wikibooks.org/wiki/LaTeX/Mathematics) : $math expression here$ or $$math$$ if you want a center block formula
 
 ### Blank line
 
