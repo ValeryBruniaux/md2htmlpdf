@@ -69,18 +69,27 @@ The example file [proportionnalite.md](https://raw.githubusercontent.com/ValeryB
 ## Tips
 
 ### Images floating
-- ![](theImage){.floatleft} : Image float to left and text fill the right
-- ![](theImage){.floatright} : Image float to right and text fill the left
-- ![](theImage){.center} : Image is a block in the center
+
+- Image float to left and text fill the right : ```![](theImage){.floatleft}```
+- Image float to right and text fill the left : ```![](theImage){.floatright}```
+- Image is a block in the center : ```![](theImage){.center}```
 
 If you want a caption for this image you need to wrap the content in a span like this :
-[![](theImage)  <= insert 2 blank spaces at the end of line to break the flow!!!
-The caption !]{.floatleft} : Image float to left with caption under and text fill the right
 
-[![](theImage)  <= insert 2 blank spaces at the end of line to break the flow!!!
-The caption !]{.floatright} : Image float to right with caption under and text fill the left
+- Image float to left with caption under and text fill the right :
 
-![The caption](theImage) : Image is a block in the center with caption under
+```
+[![](theImage)  <= insert 2 blank spaces at the end of line to break the flow!!!
+The caption !]{.floatleft}
+```
+
+- Image float to right with caption under and text fill the left :
+
+```
+[![](theImage)  <= insert 2 blank spaces at the end of line to break the flow!!!
+The caption !]{.floatright}
+```
+- Image is a block in the center with caption under : ```![The caption](theImage)```
 
 ### Warning block
 
