@@ -81,4 +81,5 @@ echo "============================================================="
 Author=$(head -2 "$Title".md | tail -1)
 Author=${Author:2}
 
-wkhtmltopdf --encoding 'utf-8' --print-media-type --footer-line --footer-spacing 2 --footer-font-name "$FooterFont" --footer-font-size "$FooterSize" --footer-left "$Author" --footer-right "[page] / [topage]" --margin-top "$TopMargin" --margin-left "$LeftMargin" --margin-right "$RightMargin" --margin-bottom "$BottomMargin" -O "$PageOrientation" -s "$PageSize" --javascript-delay 500 "$Title".html "$Title".pdf
+wkhtmltopdf --encoding 'utf-8' --print-media-type --footer-line --footer-spacing 2 --footer-font-name "$FooterFont" --footer-font-size "$FooterSize" --footer-left "$Author" --footer-right "[page] / [topage]" --margin-top "$TopMargin" --margin-left "$LeftMargin" --margin-right "$RightMargin" --margin-bottom "$BottomMargin" -O "$PageOrientation" -s "$PageSize" --javascript-delay 500 --no-stop-slow-scripts "$Title".html "$Title".pdf
+
