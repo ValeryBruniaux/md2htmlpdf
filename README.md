@@ -103,8 +103,13 @@ Use the [standard Latex syntax](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
 
 ### Blank line
 
-Insert blank lines in Markdown is not always easy. Here you can add a  
-\ with two spaces at the beginning of the line.
+Insert blank lines in Markdown is not always easy. Here you can do that to insert a blank line between Line 1 and Line 2 :
+
+Line 1
+
+\
+
+Line 2
 
 ### Your own style :+1: !
 
