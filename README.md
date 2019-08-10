@@ -103,7 +103,7 @@ Use the [standard Latex syntax](https://en.wikibooks.org/wiki/LaTeX/Mathematics)
 
 ### Blank line
 
-Insert blank lines in Markdown is not always easy. Here you can do that to insert a blank line between Line 1 and Line 2 :
+Insert blank lines in Markdown is not always easy. You can insert a blank line between Line 1 and Line 2 like this :
 
 Line 1
 
