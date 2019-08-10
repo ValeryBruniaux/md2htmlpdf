@@ -158,8 +158,8 @@ ol > li:before {
 	margin-right:auto;
 	width: 98%;
 	background-color: yellow;
-	font-size: 110%;
-/*	line-height: 1.1em;
+	/*font-size: 110%;
+	line-height: 1.1em;
 	text-align: center; */
 	border: 1px solid black;
 	border-radius: 10px;
