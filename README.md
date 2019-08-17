@@ -44,20 +44,24 @@ All [pandoc extensions](https://pandoc.org/MANUAL.html#pandocs-markdown) for mar
 
 At the beginning of markdown file put a [Pandoc Title Block](https://pandoc.org/MANUAL.html#metadata-blocks) to describe your document like this :
 
+```
 % The Wonderful title  
 % My Name  
 % 20/04/2018  
+```
 
 This block supports multilines :
 
+```
 % The Wonderful title  
   You can have a multilines title like this  
 % My Name  
   And my friend  
   And another one  
 % 20/04/2018
+```
 
-After a blank line you can write your document using markdown syntax. Look example files in examples directory.
+**After a blank line** you can write your document using markdown syntax. Look example files in examples directory.
 
 ## Pandoc Markdown extensions
 
@@ -67,6 +71,22 @@ But Pandoc includes a lot of extensions that are very useful like [GFM - GitHub 
 The example file [proportionnalite.md](https://raw.githubusercontent.com/ValeryBruniaux/md2htmlpdf/master/examples/proportionnalite.md) shows you how to use them.
 
 ## Tips
+
+### Blank line
+
+Insert blank lines in Markdown is not always easy. You can insert a blank line between Line 1 and Line 2 like this :
+
+```
+Line 1
+
+\
+
+Line 2
+```
+
+### Mathematical expressions
+
+Use the [standard Latex syntax](https://en.wikibooks.org/wiki/LaTeX/Mathematics) : $math expression here$ or $$math$$ if you want a center block formula
 
 ### Images floating
 
@@ -91,25 +111,59 @@ The caption !]{.floatright}
 ```
 - Image is a block in the center with caption under : ```![The caption](theImage.png)```
 
+### Multiple columns
+
+Insert your columns in a block :
+
+```
+::: cols
+
+:::
+```
+
+#### 2 columns
+
+```
+::: cols
+
+::: col12
+First column
+:::
+
+::: col22
+Second column
+:::
+
+:::
+```
+
+#### 3 columns
+
+```
+::: cols
+
+::: col13
+First column
+:::
+
+::: col23
+Second column
+:::
+
+::: col33
+Third column
+:::
+
+:::
+```
+
 ### Warning block
 
+```
 ::: warning  
 You can add a warning block by using this syntax.  
 :::
-
-### Mathematical expressions
-
-Use the [standard Latex syntax](https://en.wikibooks.org/wiki/LaTeX/Mathematics) : $math expression here$ or $$math$$ if you want a center block formula
-
-### Blank line
-
-Insert blank lines in Markdown is not always easy. You can insert a blank line between Line 1 and Line 2 like this :
-
-Line 1
-
-\
-
-Line 2
+```
 
 ### Your own style :+1: !
 

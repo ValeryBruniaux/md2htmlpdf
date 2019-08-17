@@ -205,6 +205,47 @@ ol > li:before {
     counter-increment: li-counter;
 }
 
+.cols {
+	display: table;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.col12 {
+  display: table-cell;
+  width: 50%;
+  padding: 0 0.5em 0 0;
+  border-right: 1px solid;
+}
+
+.col22 {
+  display: table-cell;
+  width: 50%;
+  padding: 0 0 0 0.5em;
+  border-left: 1px solid;
+}
+
+.col13 {
+  display: table-cell;
+  width: 33.33333%;
+  padding: 0 0.4em 0 0;
+  border-right: 1px solid;
+}
+
+.col23 {
+  display: table-cell;
+  width: 33.33333%;
+  padding: 0 0.4em 0 0.4em;
+  border-left: 1px solid;
+}
+
+.col33 {
+  display: table-cell;
+  width: 33.33333%;
+  padding: 0 0 0 0.4em;
+  border-left: 1px solid;
+}
+
 .warning {
 	margin-left:auto; 
 	margin-right:auto;
