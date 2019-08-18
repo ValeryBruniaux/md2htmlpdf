@@ -10,6 +10,9 @@ Premier paragraphe normal
 \
 
 Premier paragraphe normal
+
+![Test](http://www.plantuml.com/plantuml/png/LOunhiCm241tJi6ONE7_eTbwYKeMiac3v63NE97SqvTsQZVU0w6tMAVMZpq3V2O0MN6wDghRAKyKTPipfykCVMF5QR3DWFXNMubiXhwzQHAwDzhj7pWRuwJbvwPe7iuX63yEriWX86boGR7BANsu-FgXITPtJwa0YvFdlG00){.imgbox}
+
 Premier paragraphe normal
 
 ::: cols

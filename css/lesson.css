@@ -274,13 +274,20 @@ img {
 	text-align: center;
 }
 
+.imgbox {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 figure {
 	text-align: center;
 	font-style: italic;
 	font-size: smaller;
 	text-indent: 0;
 	margin: 0em;
-	padding: 0em;
+	padding: 0em;	
 }
 
 figcaption {

@@ -111,6 +111,25 @@ The caption !]{.floatright}
 ```
 - Image is a block in the center with caption under : ```![The caption](theImage.png)```
 
+### Nice image boxing
+
+Add nice borders to your images with the class **imgbox** like this :
+
+```
+![My caption](imagefile){.imgbox}
+```
+
+### Plantuml diagrams
+
+You can use **Plantuml online server** to integrate **without dependency** Plantuml diagrams :
+
+- Paste your code into [plantuml server](http://www.plantuml.com/plantuml/uml)
+- Put **generated URL** in your markdown file **like an image** :
+
+	```
+	![My caption](http://www.plantuml.com/plantuml/png/LOv13i90203ll89Z-mKzs9kVCDcGbbgIBRikjCdwUeadlGq3cJ2PK_DZp_05a1M7UwEwdV96qP0vyt8RqJTM73hR28YNsihCPXZRXov2pqQxNO6pCGvQ_cwAvXvpIiQlWtNcb91q2K6poodUG_mqehU2UQam1STh7m00)
+	```
+
 ### Multiple columns
 
 Insert your columns in a block :
@@ -199,3 +218,9 @@ You can also assign these 2 classes to any piece of text using the previous tip.
 # Fonts examples
 
 You can find fonts used in the examples in the [Fonts directory](https://github.com/ValeryBruniaux/md2htmlpdf/tree/master/fonts).
+
+# TODO
+
+- Graphviz without dependency
+- Code2flow without dependency
+
