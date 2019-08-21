@@ -18,11 +18,12 @@
 
 body {
     /*-webkit-font-smoothing: antialiased;*/
-	font-size: 120%;
+	font-size: 19px;
 	font-weight: normal;
 	font-style: normal;
 	color: black;
 	overflow: auto;
+	text-align: justify;
 /*    text-rendering: geometricPrecision;
     text-rendering: optimizeLegibility;*/
 /*    width: 210mm;*/
@@ -30,12 +31,12 @@ body {
 
 body, p, .warning, .inlinewarning {
 	font-family: "Souvenir Lt Bt", Andika, "Amerigo BT", Century, "Bookman URW", "Bitstream Vera Serif", "Free Sans", Georgia, Serif, Aerial, "Times New Roman", "STSong", "PT Serif";
-	line-height: 1.5rem;
+	line-height: 120%;
+
 }
 
 p {
-	text-align: justify;
-	margin : 0.1rem 0 0 0;
+	margin : 0.2em 0 0.2em 0;
 }
 
 sub, sup {
@@ -46,45 +47,43 @@ h1, h2, h3, h4, h5, h6, .title {
 	font-family: OpenDyslexic, "Lucida Sans", "Bitstream Vera Sans", "Arial Rounded MT Bold", Arbeka, "Lucida Grande", "Lucida Sans Unicode", "Luxi Sans", "Lato", sans-serif, "Aerial";
 	font-weight: bold;
 	font-style: italic;
-	line-height: 2rem;
+	line-height: 120%;
+	margin: 0 0 0.1em 0;
 }
 
 .title {
 	font-size: 200%;
 	text-align: center;
-	border: 1px solid black;
+	border: 2px solid black;
 	border-radius: 10px;
-	padding : 0.5rem;
+	padding : 0.1em;
 	box-shadow: 3px 3px 3px #aaa;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	background: lightgrey;
 }
 
 h1 {
 	font-size: 150%;
-	margin-top : 1rem;
-	margin-bottom : 0.5rem;
+	margin-top : 1em;
 	border-bottom : 1px solid grey;
-   background-color: lightgrey;
+	background-color: lightgrey;
 }
 
 
 h2 {
 	font-size: 125%;
-	margin-top : 0.4rem;
-	margin-bottom : -0.1rem;
+	margin-top : 0.5em;
 	text-decoration: underline;
 }
 
 h3 {
 	font-size: 110%;
-	margin-top : 0.3rem;
-	margin-bottom : -0.20rem;
+	margin-top : 0.4em;
 }
 
 h4, h5, h6 {
 	font-size: 100%;
-	margin-top : 0.2rem;
-	margin-bottom : -0.30rem;
+	margin-top : 0.3em;
 }
 
 .header-section-number:after {
@@ -93,8 +92,8 @@ h4, h5, h6 {
 
 table {
 	border-collapse: collapse;
-	margin-top: 0.5rem;
-	margin-bottom: 0.5rem;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 	margin-left:auto; 
 	margin-right:auto;
 	width: 85%;
@@ -112,10 +111,12 @@ tr:nth-child(even), th {
 }
 
 ol,ul {
-   list-style-type: none;
+	list-style-type: none;
 	list-style-position: inside;
 	text-align: justify;
 	margin : 0;
+	padding: 0;
+	padding-left: 1em;
 }
 
 ol {
@@ -194,6 +195,7 @@ li:before {
 ul > li:before {
 	font-size: 1.1em;
 	content: "➫";
+	content: "❑";
 }
 
 ol > li:before {
@@ -203,6 +205,22 @@ ol > li:before {
     background-color: #464646;
     content: counter(li-counter);
     counter-increment: li-counter;
+}
+
+.padleft2 {
+padding-left: 2em;
+}
+
+.padleft5 {
+padding-left: 5em;
+}
+
+.padleft10 {
+padding-left: 10em;
+}
+
+.padleft15 {
+padding-left: 15em;
 }
 
 .cols {
@@ -215,59 +233,76 @@ ol > li:before {
   display: table-cell;
   width: 50%;
   padding: 0 0.5em 0 0;
-  border-right: 1px solid;
 }
 
 .col22 {
   display: table-cell;
   width: 50%;
   padding: 0 0 0 0.5em;
-  border-left: 1px solid;
 }
 
 .col13 {
   display: table-cell;
   width: 33.33333%;
   padding: 0 0.4em 0 0;
-  border-right: 1px solid;
 }
 
 .col23 {
   display: table-cell;
   width: 33.33333%;
   padding: 0 0.4em 0 0.4em;
-  border-left: 1px solid;
 }
 
 .col33 {
   display: table-cell;
   width: 33.33333%;
   padding: 0 0 0 0.4em;
-  border-left: 1px solid;
 }
 
 .warning {
+	margin: 0.5em 0;
 	margin-left:auto; 
 	margin-right:auto;
-	width: 98%;
 	background-color: yellow;
 	/*font-size: 110%;
-	line-height: 1.1em;
-	text-align: center; */
-	border: 1px solid black;
+	line-height: 110%;
+	border: 1px solid white;*/
+	border: none;
 	border-radius: 10px;
-	padding : 0.5rem;
-	box-shadow: 3px 3px 3px #aaa;
+	padding : 0.1em 0.4em;
+	box-shadow: 0 4px 8px 0 red, 0 6px 20px 0 orange;
+}
+
+.warning ol, .warning ul {
+	padding-left: 1em;
+}
+
+.warning ul > li:before {
+	content: "➫";
 }
 
 .inlinewarning {
 	background-color: yellow;
-	text-decoration: underline;
+/*	text-decoration: underline;*/
 }
 
-.sourceCode {
+div.sourceCode {
+	margin: 0.5em 0;
 	text-align: left;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+code {
+	background-color: lightgrey;
+}
+
+code.sourceCode {
+	background-color: inherit;
+}
+
 
 img {
 	margin: auto;
@@ -277,7 +312,7 @@ img {
 .imgbox {
 	border: 1px solid #ddd;
 	border-radius: 4px;
-	padding: 5px;
+	padding: 0px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
