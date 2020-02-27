@@ -1,6 +1,10 @@
-% La Proportionnalité
-% Valéry Bruniaux - Lycée Arthur Rimbaud
-% 25/04/2018
+---
+title : La Proportionnalité
+author : Valéry Bruniaux - Lycée Arthur Rimbaud
+date : 25/04/2018
+---
+
+# La Proportionnalité{- .title}
 
 # Qu'est-ce-que la Proportionnalité ?
 

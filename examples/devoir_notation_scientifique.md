@@ -1,9 +1,14 @@
-% Devoir : Univers - Dimensions
-% Valéry Bruniaux - Lycée Arthur Rimbaud
-% 25/04/2018
+---
+title : Devoir : Univers - Dimensions
+author : Valéry Bruniaux - Lycée Arthur Rimbaud
+date : 25/04/2018
+---
+
+# Devoir : Univers - Dimensions{- .title}
 
 # Définitions
-1) Expliquez pourquoi on dit que l'univers est **lacunaire**.
+
+Expliquez pourquoi on dit que l'univers est **lacunaire**.
 
 \  
 

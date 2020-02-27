@@ -47,8 +47,8 @@ $include-before$
 $endfor$
 $if(title)$
 <header>
-<!--
 <p class="title">$title$</p>
+<!--
 $if(subtitle)$
 <p class="subtitle">$subtitle$</p>
 $endif$

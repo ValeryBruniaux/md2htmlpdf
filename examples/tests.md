@@ -1,6 +1,10 @@
-% Test du multi-colonnage
-% Valéry Bruniaux
-% 17/08/2019
+---
+title : Test du multi-colonnage
+author : Valéry Bruniaux
+date : 17/08/2019
+---
+
+# Test du multi-colonnage {- .title}
 
 # Test du système de colones
 

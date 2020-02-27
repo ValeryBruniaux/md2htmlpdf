@@ -38,30 +38,30 @@ If you want to use equations, you need **internet access** to reach the transfor
 
 # Syntax for markdown file ?
 
-## Header and Pandoc Title Block
+## Header and Yaml Metadata Block
 
 All [pandoc extensions](https://pandoc.org/MANUAL.html#pandocs-markdown) for markdown are usable (equation, emoji, tables, ...)
 
-At the beginning of markdown file put a [Pandoc Title Block](https://pandoc.org/MANUAL.html#metadata-blocks) to describe your document like this :
+At the beginning of markdown file put a [Yaml Metadata Block](https://pandoc.org/MANUAL.html#extension-yaml_metadata_block) to describe your document like this :
 
-```
-% The Wonderful title  
-% My Name  
-% 20/04/2018  
-```
-
-This block supports multilines :
-
-```
-% The Wonderful title  
-  You can have a multilines title like this  
-% My Name  
-  And my friend  
-  And another one  
-% 20/04/2018
+```yaml
+---
+title : The Wonderful title  
+author : My Name  
+date : 20/04/2018
+what : you want
+---
 ```
 
 **After a blank line** you can write your document using markdown syntax. Look example files in examples directory.
+
+⚠️ This version 1.1 the default template no longer includes title at the beginning of the document.
+You can use the `auto_title.template` that works like in previous version.
+Or you can write title like in old template with (no number and title class) :
+
+```
+# Your nice title {- .title}
+```
 
 ## Pandoc Markdown extensions
 
