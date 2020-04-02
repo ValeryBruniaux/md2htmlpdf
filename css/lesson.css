@@ -259,6 +259,20 @@ padding-left: 15em;
   padding: 0 0 0 0.4em;
 }
 
+.box {
+	margin: 0.5em 0;
+	margin-left:auto; 
+	margin-right:auto;
+	background-color: none;
+	/*font-size: 110%;
+	line-height: 110%;
+	border: 1px solid white;*/
+	border: none;
+	border-radius: 10px;
+	padding : 0.1em 0.4em;
+	box-shadow: 0 4px 8px 0 red, 0 6px 20px 0 orange;
+}
+
 .warning {
 	margin: 0.5em 0;
 	margin-left:auto; 

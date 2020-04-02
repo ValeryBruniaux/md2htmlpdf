@@ -28,6 +28,7 @@ FooterSize="8"
 StyleTemplate="$1"
 StyleCss="$2"
 Title=`echo $3 | cut -f1 -d'.'`
+TmpFile="/tmp/md2htmlpdf.tmp"
 
 if [[ $# -lt 1 || $# -gt 3 ]]; then
 		echo "============================================================="
@@ -79,17 +80,18 @@ echo "============================================================="
 # Actual stable
 #pandoc "$Title".md --from=markdown+emoji --to=html5 --self-contained --highlight-style=tango --template="$StyleTemplate" -c "$StyleCss" --number-sections --standalone --webtex="http://latex.codecogs.com/svg.latex?" -o "$Title".html
 
+# Test Pandoc to pdf 
+# pandoc "$Title".md --from=markdown+emoji --pdf-engine=wkhtmltopdf --highlight-style=tango -c "$StyleCss" --number-sections --webtex="http://latex.codecogs.com/svg.latex?" -o "$Title".pdf
+
 # Yaml
 pandoc "$Title".md --from=markdown+emoji+yaml_metadata_block --to=html5 --self-contained --highlight-style=tango --template="$StyleTemplate" -c "$StyleCss" --number-sections --standalone --webtex="http://latex.codecogs.com/svg.latex?" -o "$Title".html
-
-
-# travail Pandoc to pdf 
-# pandoc "$Title".md --from=markdown+emoji --pdf-engine=wkhtmltopdf --highlight-style=tango -c "$StyleCss" --number-sections --webtex="http://latex.codecogs.com/svg.latex?" -o "$Title".pdf
 
 echo "============================================================="
 echo "=> Make PDF file : $Title.pdf ..."
 echo "============================================================="
 
+# === Extract Author name from YAML block
+head -n $(sed -n '/---/=' "$Title.md" | head -2 | tail -1) "$Title.md" > $TmpFile
 parse_yaml() {
    local prefix=$2
    local s='[[:space:]]*' w='[a-zA-Z0-9_]*' fs=$(echo @|tr @ '\034')
@@ -105,11 +107,11 @@ parse_yaml() {
       }
    }'
 }
+eval $(parse_yaml $TmpFile "")
+rm $TmpFile
+# ===
 
-eval $(parse_yaml "$Title".md "")
-echo $author
-
-# pandoc block
+#pandoc block
 #author=$(head -2 "$Title".md | tail -1)
 #author=${author:2}
 
