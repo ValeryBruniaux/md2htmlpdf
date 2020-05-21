@@ -84,7 +84,7 @@ echo "============================================================="
 # pandoc "$Title".md --from=markdown+emoji --pdf-engine=wkhtmltopdf --highlight-style=tango -c "$StyleCss" --number-sections --webtex="http://latex.codecogs.com/svg.latex?" -o "$Title".pdf
 
 # Yaml
-pandoc "$Title".md --from=markdown+emoji+yaml_metadata_block --to=html5 --self-contained --highlight-style=tango --template="$StyleTemplate" -c "$StyleCss" --number-sections --standalone --webtex="http://latex.codecogs.com/svg.latex?" -o "$Title".html
+pandoc "$Title".md --from=markdown+emoji+yaml_metadata_block+lists_without_preceding_blankline --to=html5 --self-contained --highlight-style=tango --template="$StyleTemplate" -c "$StyleCss" --number-sections --standalone --webtex="http://latex.codecogs.com/svg.latex?" -o "$Title".html
 
 echo "============================================================="
 echo "=> Make PDF file : $Title.pdf ..."
