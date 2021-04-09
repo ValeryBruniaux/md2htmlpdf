@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Valéry Bruniaux - Lycée Arthur Rimbaud" />
+  <title>La Proportionnalité</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+@charset "UTF-8";
+body {
+
+font-size: 19px;
+font-weight: normal;
+font-style: normal;
+color: black;
+overflow: auto;
+text-align: justify;
+
+
+}
+body, p, .warning, .inlinewarning {
+font-family: "Souvenir Lt Bt", Andika, "Amerigo BT", Century, "Bookman URW", "Bitstream Vera Serif", "Free Sans", Georgia, Serif, Aerial, "Times New Roman", "STSong", "PT Serif";
+line-height: 120%;
+}
+p {
+margin : 0.2em 0 0.2em 0;
+}
+sub, sup {
+font-size: 70%;
+}
+h1, h2, h3, h4, h5, h6, .title {
+font-family: OpenDyslexic, "Lucida Sans", "Bitstream Vera Sans", "Arial Rounded MT Bold", Arbeka, "Lucida Grande", "Lucida Sans Unicode", "Luxi Sans", "Lato", sans-serif, "Aerial";
+font-weight: bold;
+font-style: italic;
+line-height: 120%;
+margin: 0 0 0.1em 0;
+}
+.title {
+font-size: 200%;
+text-align: center;
+border: 2px solid black;
+border-radius: 10px;
+padding : 0.1em;
+box-shadow: 3px 3px 3px #aaa;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+background: lightgrey;
+}
+h1 {
+font-size: 150%;
+margin-top : 1em;
+border-bottom : 1px solid grey;
+background-color: lightgrey;
+}
+h2 {
+font-size: 125%;
+margin-top : 0.5em;
+text-decoration: underline;
+}
+h3 {
+font-size: 110%;
+margin-top : 0.4em;
+}
+h4, h5, h6 {
+font-size: 100%;
+margin-top : 0.3em;
+}
+.header-section-number:after {
+content: ') ';
+}
+table {
+border-collapse: collapse;
+margin-top: 0.5em;
+margin-bottom: 0.5em;
+margin-left:auto; margin-right:auto;
+width: 85%;
+}
+table, th, td {
+border: 1px solid black;
+padding: 5px;
+font-weight: normal;
+font-style: normal;
+}
+tr:nth-child(even), th {
+background-color: lightgrey;
+}
+ol,ul {
+list-style-type: none;
+list-style-position: inside;
+text-align: justify;
+margin : 0;
+padding: 0;
+padding-left: 1em;
+}
+ol {
+counter-reset: li-counter;
+}
+ol[start="0"] {
+counter-reset: li-counter -1;
+}
+ol[start="1"] {
+counter-reset: li-counter 0;
+}
+ol[start="2"] {
+counter-reset: li-counter 1;
+}
+ol[start="3"] {
+counter-reset: li-counter 2;
+}
+ol[start="4"] {
+counter-reset: li-counter 3;
+}
+ol[start="5"] {
+counter-reset: li-counter 4;
+}
+ol[start="6"] {
+counter-reset: li-counter 5;
+}
+ol[start="7"] {
+counter-reset: li-counter 6;
+}
+ol[start="8"] {
+counter-reset: li-counter 7;
+}
+ol[start="9"] {
+counter-reset: li-counter 8;
+}
+ol[start="10"] {
+counter-reset: li-counter 9;
+}
+ol[start="100"] {
+counter-reset: li-counter 99;
+}
+ol[start="1000"] {
+counter-reset: li-counter 999;
+}
+li {
+position: relative;
+margin-bottom: 0px;
+padding-left: 0.5em;
+}
+li:before {
+position: absolute;
+top: 0;
+left: -1em;
+width: 1em;
+height: 1em;
+font-size: 1em;
+line-height: 1;
+text-align: center;
+}
+ul > li:before {
+font-size: 1.1em;
+content: "➫";
+content: "❑";
+}
+ol > li:before {
+color: #f5f5f5;
+border: 3px solid #c5c5c5;
+border-radius: 50%;
+background-color: #464646;
+content: counter(li-counter);
+counter-increment: li-counter;
+}
+.padleft2 {
+padding-left: 2em;
+}
+.padleft5 {
+padding-left: 5em;
+}
+.padleft10 {
+padding-left: 10em;
+}
+.padleft15 {
+padding-left: 15em;
+}
+.cols {
+display: table;
+width: 100%;
+border-collapse: collapse;
+}
+.col12 {
+display: table-cell;
+width: 50%;
+padding: 0 0.5em 0 0;
+}
+.col22 {
+display: table-cell;
+width: 50%;
+padding: 0 0 0 0.5em;
+}
+.col13 {
+display: table-cell;
+width: 33.33333%;
+padding: 0 0.4em 0 0;
+}
+.col23 {
+display: table-cell;
+width: 33.33333%;
+padding: 0 0.4em 0 0.4em;
+}
+.col33 {
+display: table-cell;
+width: 33.33333%;
+padding: 0 0 0 0.4em;
+}
+.box {
+margin: 0.5em 0;
+margin-left:auto; margin-right:auto;
+background-color: none;
+
+border: none;
+border-radius: 10px;
+padding : 0.1em 0.4em;
+box-shadow: 0 4px 8px 0 red, 0 6px 20px 0 orange;
+}
+.warning {
+margin: 0.5em 0;
+margin-left:auto; margin-right:auto;
+background-color: yellow;
+
+border: none;
+border-radius: 10px;
+padding : 0.1em 0.4em;
+box-shadow: 0 4px 8px 0 red, 0 6px 20px 0 orange;
+}
+.warning ol, .warning ul {
+padding-left: 1em;
+}
+.warning ul > li:before {
+content: "➫";
+}
+.inlinewarning {
+background-color: yellow;
+
+}
+div.sourceCode {
+margin: 0.5em 0;
+text-align: left;
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 5px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+code {
+background-color: lightgrey;
+}
+code.sourceCode {
+background-color: inherit;
+}
+img {
+margin: auto;
+text-align: center;
+}
+.imgbox {
+border: 1px solid #ddd;
+border-radius: 4px;
+padding: 0px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+figure {
+text-align: center;
+font-style: italic;
+font-size: smaller;
+text-indent: 0;
+margin: 0em;
+padding: 0em;	}
+figcaption {
+}
+.center {
+display: block;
+margin: auto;
+text-align: center;
+}
+.floatleft {
+float: left;
+text-align: center;
+font-style: italic;
+font-size: smaller;
+text-indent: 0;
+margin: 0;
+padding: 0em 0.5em 0 0;
+}
+.floatright {
+float: right;
+text-align: center;
+font-style: italic;
+font-size: smaller;
+text-indent: 0;
+margin: 0;
+padding: 0 0 0 0.5em;
+}
+p, td, div, ul, li {
+-webkit-hyphens: auto;
+-moz-hyphens: auto;
+-ms-hyphens: auto;
+-o-hyphens: auto;
+hyphens: auto;
+word-wrap: break-word;
+word-break: break-word;
+}
+@page
+{
+size: 21cm 29.7cm;
+margin: 0.75cm 1cm 1cm 1cm;
+
+}
+@media print
+{
+p
+{
+widows: 1;
+orphans: 1;
+}
+.pagebreakafter
+{
+page-break-after: always;
+}
+.pagebreakbefore
+{
+page-break-before: always;
+}
+div, code, pre, blockquote, li, span, table
+{
+page-break-inside: avoid;
+}
+h1, h2, h3, h4
+{
+page-break-after: avoid;
+}
+}
+.pagebreakbefore {
+page-break-before: always;
+}
+</style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header>
+<!--
+<p class="title">La Proportionnalité</p>
+<p class="author">Valéry Bruniaux - Lycée Arthur Rimbaud</p>
+<p class="date">25/04/2018</p>
+-->
+</header>
+<h1 class="unnumbered title" data-number id="la-proportionnalité">La Proportionnalité</h1>
+<h1 data-number="1" id="quest-ce-que-la-proportionnalité"><span class="header-section-number">1</span> Qu’est-ce-que la Proportionnalité ?</h1>
+<p>La <strong>proportionnalité</strong> est une <strong>relation</strong> spécifique entre <strong>deux grandeurs</strong> qui sont reliées par un <strong>coefficient multiplicateur</strong>. On peut donc passer d’une grandeur à l’autre en multipliant par le <strong>coefficient de proportionnalité</strong>.<br />
+En réalité c’est une notion triviale et très intuitive mais dans certaines situations moins courantes il faut être capable de reconnaître la proportionnalité et d’appliquer correctement les calculs requis.<br />
+Voici un exemple simple dans lequel vous constatez que la grandeur <strong><em>Nombre de baguettes</em></strong> est liée à la grandeur <strong><em>Prix total</em></strong> par une <strong>relation de proportionnalité</strong>. C’est-à-dire que pour passer d’une valeur de la grandeur <strong><em>Nombre de baguettes</em></strong> à une valeur de la grandeur <strong><em>Prix total</em></strong>, on multiplie par un coefficient toujours identique qui est 0,80.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong><em>Nombre de baguettes</em></strong></th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong><em>Prix total (€)</em></strong></td>
+<td style="text-align: center;">0,80</td>
+<td style="text-align: center;">1,60</td>
+<td style="text-align: center;">2,40</td>
+<td style="text-align: center;">3,20</td>
+</tr>
+</tbody>
+</table>
+<p>Voici un autre exemple tiré d’une recette de cuisine :</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong><em>Nombre d’œufs</em></strong></th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+<th style="text-align: center;">5</th>
+<th style="text-align: center;">6</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong><em>Cuillères de farine</em></strong></td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">18</td>
+</tr>
+</tbody>
+</table>
+<p>Déterminez le <strong>coefficient de proportionnalité</strong> qui permet de passer du <strong><em>nombre d’œufs</em></strong> au nombre de <strong><em>cuillères de farine</em></strong>.<br />
+<br />
+</p>
+<hr />
+<p>Calculez maintenant le nombre de <strong><em>cuillères de farine</em></strong> qui faudrait mettre pour 8 œufs ?<br />
+ </p>
+<hr />
+<h1 data-number="2" id="pourquoi-je-dois-bien-la-comprendre"><span class="header-section-number">2</span> Pourquoi je dois bien la comprendre ?</h1>
+<p>Cette <strong>loi de proportionnalité</strong> est présente dans les raisonnements de <strong>toutes les activités humaines</strong> et elle régit de nombreux <strong>phénomènes naturels</strong>.<br />
+Vous l’utiliserez donc dans la <strong>vie quotidienne</strong> pour calculer une réduction, estimer votre retraite, adapter une recette de cuisine ou améliorer votre efficacité dans un jeu vidéo. De même, un médecin s’en servira pour déterminer une posologie, un économiste pour analyser des statistiques, un vendeur pour prévoir ses stocks.<br />
+<strong>La proportionnalité</strong> est vraiment indispensable dans la <strong>vie professionnelle</strong> comme <strong>personnelle</strong>, il faut donc bien en <strong>maîtriser les techniques de calcul</strong>.</p>
+<h1 data-number="3" id="reconnaître-une-relation-de-proportionnalité"><span class="header-section-number">3</span> Reconnaître une relation de proportionnalité</h1>
+<p>Pour dire que deux grandeurs sont proportionnelles, c’est simple : il suffit de vérifier que le <strong>coefficient multiplicateur</strong> entre ces deux grandeurs est <strong>identique pour toutes les valeurs</strong> prises par ces grandeurs.<br />
+Par exemple les grandeurs <strong><em>x</em></strong> et <strong><em>y</em></strong> sont proportionnelles car le <strong>coefficient multiplicateur</strong> est de 5 pour <strong>toutes les valeurs de ces grandeurs</strong>.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong><em>x</em></strong></th>
+<th style="text-align: center;">0</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">2</th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">4</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">coeff.</td>
+<td style="text-align: center;"><strong><em>5</em></strong></td>
+<td style="text-align: center;"><strong><em>5</em></strong></td>
+<td style="text-align: center;"><strong><em>5</em></strong></td>
+<td style="text-align: center;"><strong><em>5</em></strong></td>
+<td style="text-align: center;"><strong><em>5</em></strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong><em>y</em></strong></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">20</td>
+</tr>
+</tbody>
+</table>
+<p>On peut aussi regarder la courbe de la fonction <strong>y=f(x)</strong>. Si cette courbe entre les deux grandeurs forme une <strong>droite passant par le point (0,0)</strong> alors x et y sont <strong>proportionnelles</strong>.</p>
+<p>Dans l’exemple suivant, calculez le coefficient multiplicateur entre les grandeurs <strong><em>vitesse</em></strong> et <strong><em>résistance de l’air</em></strong> et dites si les grandeurs sont proportionnelles.<br />
+ </p>
+<hr />
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong><em>vitesse</em></strong></th>
+<th style="text-align: center;">0</th>
+<th style="text-align: center;">5</th>
+<th style="text-align: center;">10</th>
+<th style="text-align: center;">15</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">coefficient multiplicateur</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong><em>résistance de l’air</em></strong></td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">2,5</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">22,5</td>
+</tr>
+</tbody>
+</table>
+<h1 data-number="4" id="quand-utiliser-la-proportionnalité"><span class="header-section-number">4</span> Quand utiliser la proportionnalité ?</h1>
+<p>On peut utiliser la proportionnalité pour résoudre des problèmes et calculer des valeurs inconnues dans deux situations :</p>
+<ul>
+<li>On sait que les grandeurs du problème sont proportionnelles (par ex. la masse et le volume d’un liquide sont forcément proportionnels)</li>
+<li>On a montré que les grandeurs du problème sont proportionnelles grâce à des valeurs données. Une fois que l’on sait que deux grandeurs sont proportionnelles, il suffit de connaître un <strong>couple de valeurs des deux grandeurs</strong> ou le <strong>coefficient de proportionnalité</strong> pour trouver les valeurs manquantes.</li>
+</ul>
+<h1 data-number="5" id="comment-utiliser-la-proportionnalité"><span class="header-section-number">5</span> Comment utiliser la proportionnalité ?</h1>
+<p>Il faut trouver le <strong>coefficient de proportionnalité</strong> qui permet de passer d’une grandeur à une autre. Ensuite on pourra facilement appliquer le coefficient de proportionnalité aux valeurs données pour trouver les valeurs manquantes avec une multiplication : <strong><em>valeur cherchée = valeur donnée x coefficient de proportionnalité</em></strong>.</p>
+<h2 data-number="5.1" id="si-le-coefficient-de-proportionnalité-est-facile-à-trouver"><span class="header-section-number">5.1</span> Si le coefficient de proportionnalité est facile à trouver…</h2>
+<p>On peut parfois le trouver directement s’il est donné ou si les valeurs du problème permettent de le trouver rapidement.</p>
+<p>Voici un exemple de problème où il est question de la vitesse du son dans l’air qui est de 340 m/s. On souhaite calculer cette vitesse en km/h sachant que 1 m/s = 3,6 km/h. Il est évident que la vitesse en m/s est proportionnelle à la vitesse en km/h, on peut donc dresser le tableau suivant :</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong><em>vitesse en m/s</em></strong></th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">340</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">coefficient multiplicateur</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong><em>vitesse en km/h</em></strong></td>
+<td style="text-align: center;">3,6</td>
+<td style="text-align: center;">?</td>
+</tr>
+</tbody>
+</table>
+<p>Dans ce cas, le <strong>coefficient de proportionnalité</strong> pour passer de la <strong><em>vitesse en m/s</em></strong> à la <strong><em>vitesse en km/h</em></strong> est évidemment <strong>3,6</strong>. On peut donc appliquer directement le coefficient de proportionnalité à 340 m/s pour trouver 340 x 3,6 = 1224 km/h.</p>
+<h2 data-number="5.2" id="si-le-coefficient-de-proportionnalité-nest-pas-évident"><span class="header-section-number">5.2</span> Si le coefficient de proportionnalité n’est pas évident…</h2>
+<p>C’est le cas sur lequel il faut s’entraîner pour acquérir des <strong>automatismes</strong>. On a vu dans l’exemple précédent que le <strong>coefficient de proportionnalité</strong> était évident quand on avait la valeur <strong>1</strong> dans la grandeur de départ. Il faut donc se ramener à la même situation, c’est-à-dire qu’on va chercher la valeur de la grandeur d’arrivée <strong><em>pour 1 dans la grandeur de départ</em></strong> ! Cette technique a en plus l’avantage d’être très facile à comprendre dans un problème concret.</p>
+<h3 data-number="5.2.1" id="exemple-simple"><span class="header-section-number">5.2.1</span> Exemple simple</h3>
+<p>Linus a acheté 3 microprocesseurs pour 315 € et il souhaite savoir combien lui coûterait d’en acheter 7 pour remettre à jour tous ses ordinateurs.</p>
+<ul>
+<li>On va donc <strong>chercher le prix pour 1 microprocesseur</strong> ! Pour cela, c’est très simple, on connaît le prix de 3 microprocesseurs, on trouve donc le prix d’un seul microprocesseur en divisant le prix de 3 (315) par 3. Ce qui donne 105 €.</li>
+<li>La valeur obtenue (105) sera le <strong>coefficient de proportionnalité</strong> pour passer du <strong><em>nombre de microprocesseurs</em></strong> au <strong><em>prix total</em></strong>.</li>
+<li>On calculera facilement le <strong><em>prix total</em></strong> pour 7 microprocesseurs en multipliant le <strong><em>nombre de microprocesseurs</em></strong> par le <strong><em>coefficient de proportionnalité</em></strong> obtenu.</li>
+</ul>
+<p>Ce qui nous donne mis sous forme de tableau de proportionnalité :</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong><em>Nombre de microprocesseurs</em></strong></th>
+<th style="text-align: center;">3</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">7</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">coefficient de proportionnalité</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">105</td>
+<td style="text-align: center;">105</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong><em>Prix total</em></strong></td>
+<td style="text-align: center;">315</td>
+<td style="text-align: center;">105</td>
+<td style="text-align: center;">735</td>
+</tr>
+</tbody>
+</table>
+<h3 data-number="5.2.2" id="exemple-plus-subtil"><span class="header-section-number">5.2.2</span> Exemple plus subtil ⚠️</h3>
+<p>Linus a découvert un filon d’or dans son jardin dans lequel il a trouvé 0,17 g. Il se rend à la bijouterie et vend son trésor pour 5,27 €. Encouragé par cette information il retourne à l’orpaillage et en trouve 5,4 g. Calculez le prix de vente de cette nouvelle découverte.</p>
+<ul>
+<li>On va <strong>chercher le prix pour 1 g d’or</strong> ! Pour cela, on connaît le prix de 0,17 g. On trouve le <span class="inlinewarning">⚠️ prix d’ 1 g <strong>en divisant le prix de 0,17 g (5,27 €) par 0,17</strong> ⚠️</span>. Ce qui donne 5,27 / 0,17 = 31 €.</li>
+<li>La valeur obtenue (31) sera le <strong>coefficient de proportionnalité</strong> pour passer de <strong><em>la masse d’or</em></strong> au <strong><em>prix de vente</em></strong>.</li>
+<li>On calculera facilement le <strong><em>prix de vente</em></strong> pour 5,4 g en multipliant la <strong><em>masse d’or</em></strong> par le <strong><em>coefficient de proportionnalité</em></strong> obtenu. 5,4 x 31 = 167,40 €.</li>
+</ul>
+<p>Ce qui nous donne mis sous forme de tableau de proportionnalité :</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong><em>Masse d’or (g)</em></strong></th>
+<th style="text-align: center;">0,17</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">5,4</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">coefficient de proportionnalité</td>
+<td style="text-align: center;">?</td>
+<td style="text-align: center;">31</td>
+<td style="text-align: center;">31</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong><em>Prix de vente (€)</em></strong></td>
+<td style="text-align: center;">5,27</td>
+<td style="text-align: center;">31</td>
+<td style="text-align: center;">167,4</td>
+</tr>
+</tbody>
+</table>
+<h1 data-number="6" id="la-bêtise-du-produit-en-croix"><span class="header-section-number">6</span> ↯ La bêtise du produit en croix ↯</h1>
+<p>Il ne faut pas utiliser la technique du <strong>produit en croix</strong> car en l’appliquant on ne comprend pas le sens des calculs que l’on applique, ce qui a deux <strong>conséquences graves</strong> :</p>
+<ul>
+<li>On s’habitue à appliquer des techniques de calculs <strong>sans comprendre ce que l’on fait</strong>, ce qui conduit à pratiquer des <strong>calculs hasardeux</strong> dont les résultats seraient de l’ordre de la chance…</li>
+<li>Dans une situation inhabituelle on ne saura jamais adapter une technique qu’on ne comprend pas alors qu’on pourra le faire avec une technique dont on a <strong>bien compris le sens des calculs</strong>.</li>
+</ul>
+<h1 data-number="7" id="et-dans-lautre-sens"><span class="header-section-number">7</span> Et dans l’autre sens ?</h1>
+<p><strong><em>Attention</em></strong> le <strong>coefficient de proportionnalité</strong> ne fonctionne que dans un sens (Grandeur1 ➫ Grandeur2). Si on veut l’appliquer dans l’autre sens (Grandeur2 ➫ Grandeur1) il faut en calculer un autre qui est <strong>l’inverse</strong> du premier : <img style="vertical-align:middle" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4KPCEtLSBUaGlzIGZpbGUgd2FzIGdlbmVyYXRlZCBieSBkdmlzdmdtIDEuMTUuMSAtLT4KPHN2ZyBoZWlnaHQ9JzE3Ljk0NTRwdCcgdmVyc2lvbj0nMS4xJyB2aWV3Qm94PSctMC4yMzkwNTEgLTAuMjM3IDE4Mi4wODggMTcuOTQ1NCcgd2lkdGg9JzE4Mi4wODhwdCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB4bWxuczp4bGluaz0naHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayc+CjxkZWZzPgo8cGF0aCBkPSdNNC43NTgxNiAtMS4zMzg5OEM0Ljg1MzggLTEuMzM4OTggNS4wMDMyNCAtMS4zMzg5OCA1LjAwMzI0IC0xLjQ5NDRTNC44NTM4IC0xLjY0OTgxIDQuNzU4MTYgLTEuNjQ5ODFIMC45OTIyNzlDMC44OTY2MzggLTEuNjQ5ODEgMC43NDcxOTggLTEuNjQ5ODEgMC43NDcxOTggLTEuNDk0NFMwLjg5NjYzOCAtMS4zMzg5OCAwLjk5MjI3OSAtMS4zMzg5OEg0Ljc1ODE2WicgaWQ9J2cwLTAnLz4KPHBhdGggZD0nTTUuNzA2NiAtMS43OTMyOEM1LjgwMjI0IC0xLjg0MTEgNS44NzM5NyAtMS44ODg5MiA1Ljg3Mzk3IC0xLjk5MjUzUzUuODAyMjQgLTIuMTQzOTYgNS43MDY2IC0yLjE5MTc4TDEuMDI4MTQgLTQuNDM5MzVDMC45MjQ1MzMgLTQuNDk1MTQgMC45MDg1OTMgLTQuNDk1MTQgMC44ODQ2ODIgLTQuNDk1MTRDMC43ODEwNzEgLTQuNDk1MTQgMC43MDEzNyAtNC40MTU0NCAwLjcwMTM3IC00LjMxMTgzUzAuNzczMTAxIC00LjE2MDQgMC44Njg3NDIgLTQuMTEyNThMNS4yNjgyNCAtMS45OTI1M0wwLjg2ODc0MiAwLjEyNzUyMkMwLjc3MzEwMSAwLjE3NTM0MiAwLjcwMTM3IDAuMjIzMTYzIDAuNzAxMzcgMC4zMjY3NzVTMC43ODEwNzEgMC41MTAwODcgMC44ODQ2ODIgMC41MTAwODdDMC45MDg1OTMgMC41MTAwODcgMC45MjQ1MzMgMC41MTAwODcgMS4wMjgxNCAwLjQ1NDI5Nkw1LjcwNjYgLTEuNzkzMjhaJyBpZD0nZzMtNjInLz4KPHBhdGggZD0nTTMuMjU5NzggLTMuMDUyNTVDMi45MzMgLTMuMDEyNyAyLjgyOTM5IC0yLjc2NTYzIDIuODI5MzkgLTIuNjA2MjNDMi44MjkzOSAtMi4zNzUwOSAzLjAzNjYxIC0yLjMxMTMzIDMuMTQwMjIgLTIuMzExMzNDMy4xODAwNyAtMi4zMTEzMyAzLjU4NjU1IC0yLjM0MzIxIDMuNTg2NTUgLTIuODI5MzlTMy4wNjA1MiAtMy41MTQ4MiAyLjU4MjMyIC0zLjUxNDgyQzEuNDUwNTYgLTMuNTE0ODIgMC4zNTA2ODUgLTIuNDE0OTQgMC4zNTA2ODUgLTEuMjk5MTNDMC4zNTA2ODUgLTAuNTQxOTY4IDAuODY4NzQyIDAuMDc5NzAxMSAxLjc1MzQyIDAuMDc5NzAxMUMzLjAxMjcgMC4wNzk3MDExIDMuNjc0MjIgLTAuNzI1MjggMy42NzQyMiAtMC44Mjg4OTJDMy42NzQyMiAtMC45MDA2MjMgMy41OTQ1MiAtMC45NTY0MTMgMy41NDY3IC0wLjk1NjQxM1MzLjQ3NDk3IC0wLjkzMjUwMyAzLjQzNTEyIC0wLjg4NDY4MkMyLjgwNTQ4IC0wLjE0MzQ2MiAxLjkxMjgzIC0wLjE0MzQ2MiAxLjc2OTM2IC0wLjE0MzQ2MkMxLjMzODk4IC0wLjE0MzQ2MiAwLjk5NjI2NCAtMC40MDY0NzYgMC45OTYyNjQgLTEuMDEyMkMwLjk5NjI2NCAtMS4zNjI4OSAxLjE1NTY3IC0yLjIwNzcyIDEuNTMwMjYgLTIuNzAxODdDMS44ODA5NSAtMy4xNDgxOSAyLjI3OTQ1IC0zLjI5MTY2IDIuNTkwMjkgLTMuMjkxNjZDMi42ODU5MyAtMy4yOTE2NiAzLjA1MjU1IC0zLjI4MzY5IDMuMjU5NzggLTMuMDUyNTVaJyBpZD0nZzMtOTknLz4KPHBhdGggZD0nTTEuNjAxOTkgLTEuODE3MTlDMS43NzczMyAtMS44MTcxOSAyLjM3NTA5IC0xLjgyNTE2IDIuNzk3NTEgLTEuOTc2NTlDMy40OTA5MSAtMi4yMTU2OSAzLjUxNDgyIC0yLjY5MzkgMy41MTQ4MiAtMi44MTM0NUMzLjUxNDgyIC0zLjI1OTc4IDMuMDkyNCAtMy41MTQ4MiAyLjU3NDM1IC0zLjUxNDgyQzEuNjczNzIgLTMuNTE0ODIgMC4zOTA1MzUgLTIuODA1NDggMC4zOTA1MzUgLTEuMzk0NzdDMC4zOTA1MzUgLTAuNTgxODE4IDAuODg0NjgyIDAuMDc5NzAxMSAxLjc2MTM5IDAuMDc5NzAxMUMzLjAwNDczIDAuMDc5NzAxMSAzLjY3NDIyIC0wLjcxNzMxIDMuNjc0MjIgLTAuODI4ODkyQzMuNjc0MjIgLTAuOTAwNjIzIDMuNTk0NTIgLTAuOTU2NDEzIDMuNTQ2NyAtMC45NTY0MTNTMy40NzQ5NyAtMC45MzI1MDMgMy40MzUxMiAtMC44ODQ2ODJDMi44MDU0OCAtMC4xNDM0NjIgMS45MTI4MyAtMC4xNDM0NjIgMS43NzczMyAtMC4xNDM0NjJDMS4xOTU1MiAtMC4xNDM0NjIgMS4wMjAxNyAtMC42Mzc2MDkgMS4wMjAxNyAtMS4wODM5NEMxLjAyMDE3IC0xLjMyMzA0IDEuMDkxOTEgLTEuNjgxNjkgMS4xMjM3OSAtMS44MTcxOUgxLjYwMTk5Wk0xLjE4NzU1IC0yLjA0MDM1QzEuNDQyNTkgLTMuMDEyNyAyLjE2Nzg3IC0zLjI5MTY2IDIuNTc0MzUgLTMuMjkxNjZDMi44OTMxNSAtMy4yOTE2NiAzLjE5NjAxIC0zLjEzMjI1IDMuMTk2MDEgLTIuODEzNDVDMy4xOTYwMSAtMi4wNDAzNSAxLjg4ODkyIC0yLjA0MDM1IDEuNTU0MTcgLTIuMDQwMzVIMS4xODc1NVonIGlkPSdnMy0xMDEnLz4KPHBhdGggZD0nTTMuMDUyNTUgLTMuMTcyMUgzLjc5Mzc3QzMuOTUzMTggLTMuMTcyMSA0LjA0ODgyIC0zLjE3MjEgNC4wNDg4MiAtMy4zMjM1NEM0LjA0ODgyIC0zLjQzNTEyIDMuOTQ1MjEgLTMuNDM1MTIgMy44MDk3MSAtMy40MzUxMkgzLjEwMDM3QzMuMjI3OSAtNC4xNTI0MyAzLjMwNzYgLTQuNjA2NzIgMy4zODczIC00Ljk2NTM4QzMuNDE5MTggLTUuMTAwODcgMy40NDMwOSAtNS4xODg1NCAzLjU2MjY0IC01LjI4NDE4QzMuNjY2MjUgLTUuMzcxODYgMy43MzAwMSAtNS4zODc4IDMuODE3NjggLTUuMzg3OEMzLjkzNzI0IC01LjM4NzggNC4wNjQ3NiAtNS4zNjM4OSA0LjE2ODM3IC01LjMwMDEyQzQuMTI4NTIgLTUuMjg0MTggNC4wODA3IC01LjI2MDI3IDQuMDQwODUgLTUuMjM2MzZDMy45MDUzNSAtNS4xNjQ2MyAzLjgwOTcxIC01LjAyMTE3IDMuODA5NzEgLTQuODYxNzdDMy44MDk3MSAtNC42Nzg0NiAzLjk1MzE4IC00LjU2Njg3IDQuMTI4NTIgLTQuNTY2ODdDNC4zNTk2NSAtNC41NjY4NyA0LjU3NDg0IC00Ljc2NjEzIDQuNTc0ODQgLTUuMDQ1MDhDNC41NzQ4NCAtNS40MTk2OCA0LjE5MjI4IC01LjYxMDk2IDMuODA5NzEgLTUuNjEwOTZDMy41Mzg3MyAtNS42MTA5NiAzLjAzNjYxIC01LjQ4MzQ0IDIuNzgxNTcgLTQuNzUwMTlDMi43MDk4NCAtNC41NjY4NyAyLjcwOTg0IC00LjU1MDkzIDIuNDk0NjUgLTMuNDM1MTJIMS44OTY4OUMxLjczNzQ4IC0zLjQzNTEyIDEuNjQxODQgLTMuNDM1MTIgMS42NDE4NCAtMy4yODM2OUMxLjY0MTg0IC0zLjE3MjEgMS43NDU0NSAtMy4xNzIxIDEuODgwOTUgLTMuMTcyMUgyLjQ0NjgyTDEuODcyOTggLTAuMDc5NzAxMUMxLjcyMTU0IDAuNzI1MjggMS42MDE5OSAxLjQwMjc0IDEuMTc5NTggMS40MDI3NEMxLjE1NTY3IDEuNDAyNzQgMC45ODgyOTQgMS40MDI3NCAwLjgzNjg2MiAxLjMwNzFDMS4yMDM0OSAxLjIxOTQzIDEuMjAzNDkgMC44ODQ2ODIgMS4yMDM0OSAwLjg3NjcxMkMxLjIwMzQ5IDAuNjkzNCAxLjA2MDAyIDAuNTgxODE4IDAuODg0NjgyIDAuNTgxODE4QzAuNjY5NDg5IDAuNTgxODE4IDAuNDM4MzU2IDAuNzY1MTMxIDAuNDM4MzU2IDEuMDY4QzAuNDM4MzU2IDEuNDAyNzQgMC43ODEwNzEgMS42MjU5IDEuMTc5NTggMS42MjU5QzEuNjY1NzUgMS42MjU5IDIuMDAwNSAxLjExNTgyIDIuMTA0MTEgMC45MTY1NjNDMi4zOTEwMyAwLjM5MDUzNSAyLjU3NDM1IC0wLjYwNTcyOSAyLjU5MDI5IC0wLjY4NTQzTDMuMDUyNTUgLTMuMTcyMVonIGlkPSdnMy0xMDInLz4KPHBhdGggZD0nTTIuMzc1MDkgLTQuOTczMzVDMi4zNzUwOSAtNS4xNDg2OSAyLjI0NzU3IC01LjI3NjIxIDIuMDY0MjYgLTUuMjc2MjFDMS44NTcwNCAtNS4yNzYyMSAxLjYyNTkgLTUuMDg0OTMgMS42MjU5IC00Ljg0NTgzQzEuNjI1OSAtNC42NzA0OSAxLjc1MzQyIC00LjU0Mjk2IDEuOTM2NzQgLTQuNTQyOTZDMi4xNDM5NiAtNC41NDI5NiAyLjM3NTA5IC00LjczNDI1IDIuMzc1MDkgLTQuOTczMzVaTTEuMjExNDYgLTIuMDQ4MzJMMC43ODEwNzEgLTAuOTQ4NDQzQzAuNzQxMjIgLTAuODI4ODkyIDAuNzAxMzcgLTAuNzMzMjUgMC43MDEzNyAtMC41OTc3NThDMC43MDEzNyAtMC4yMDcyMjMgMS4wMDQyMyAwLjA3OTcwMTEgMS40MjY2NSAwLjA3OTcwMTFDMi4xOTk3NSAwLjA3OTcwMTEgMi41MjY1MyAtMS4wMzYxMSAyLjUyNjUzIC0xLjEzOTczQzIuNTI2NTMgLTEuMjE5NDMgMi40NjI3NiAtMS4yNDMzNCAyLjQwNjk3IC0xLjI0MzM0QzIuMzExMzMgLTEuMjQzMzQgMi4yOTUzOSAtMS4xODc1NSAyLjI3MTQ4IC0xLjEwNzg1QzIuMDg4MTcgLTAuNDcwMjM3IDEuNzYxMzkgLTAuMTQzNDYyIDEuNDQyNTkgLTAuMTQzNDYyQzEuMzQ2OTUgLTAuMTQzNDYyIDEuMjUxMzEgLTAuMTgzMzEzIDEuMjUxMzEgLTAuMzk4NTA2QzEuMjUxMzEgLTAuNTg5Nzg4IDEuMzA3MSAtMC43MzMyNSAxLjQxMDcxIC0wLjk4MDMyNEMxLjQ5MDQxIC0xLjE5NTUyIDEuNTcwMTEgLTEuNDEwNzEgMS42NTc3OCAtMS42MjU5TDEuOTA0ODYgLTIuMjcxNDhDMS45NzY1OSAtMi40NTQ3OSAyLjA3MjIzIC0yLjcwMTg3IDIuMDcyMjMgLTIuODM3MzZDMi4wNzIyMyAtMy4yMzU4NyAxLjc1MzQyIC0zLjUxNDgyIDEuMzQ2OTUgLTMuNTE0ODJDMC41NzM4NDggLTMuNTE0ODIgMC4yMzkxMDMgLTIuMzk5IDAuMjM5MTAzIC0yLjI5NTM5QzAuMjM5MTAzIC0yLjIyMzY2IDAuMjk0ODk0IC0yLjE5MTc4IDAuMzU4NjU1IC0yLjE5MTc4QzAuNDYyMjY3IC0yLjE5MTc4IDAuNDcwMjM3IC0yLjIzOTYgMC40OTQxNDcgLTIuMzE5M0MwLjcxNzMxIC0zLjA3NjQ2IDEuMDgzOTQgLTMuMjkxNjYgMS4zMjMwNCAtMy4yOTE2NkMxLjQzNDYyIC0zLjI5MTY2IDEuNTE0MzIgLTMuMjUxODEgMS41MTQzMiAtMy4wMjg2NEMxLjUxNDMyIC0yLjk0ODk0IDEuNTA2MzUgLTIuODM3MzYgMS40MjY2NSAtMi41OTgyNkwxLjIxMTQ2IC0yLjA0ODMyWicgaWQ9J2czLTEwNScvPgo8cGF0aCBkPSdNMS41OTQwMiAtMS4zMDcxQzEuNjE3OTMgLTEuNDI2NjUgMS42OTc2MyAtMS43Mjk1MSAxLjcyMTU0IC0xLjg0OTA3QzEuODMzMTMgLTIuMjc5NDUgMS44MzMxMyAtMi4yODc0MiAyLjAxNjQ0IC0yLjU1MDQ0QzIuMjc5NDUgLTIuOTQwOTcgMi42NTQwNSAtMy4yOTE2NiAzLjE4ODA0IC0zLjI5MTY2QzMuNDc0OTcgLTMuMjkxNjYgMy42NDIzNCAtMy4xMjQyOCAzLjY0MjM0IC0yLjc0OTY5QzMuNjQyMzQgLTIuMzExMzMgMy4zMDc2IC0xLjQwMjc0IDMuMTU2MTYgLTEuMDEyMkMzLjA1MjU1IC0wLjc0OTE5MSAzLjA1MjU1IC0wLjcwMTM3IDMuMDUyNTUgLTAuNTk3NzU4QzMuMDUyNTUgLTAuMTQzNDYyIDMuNDI3MTUgMC4wNzk3MDExIDMuNzY5ODYgMC4wNzk3MDExQzQuNTUwOTMgMC4wNzk3MDExIDQuODc3NzEgLTEuMDM2MTEgNC44Nzc3MSAtMS4xMzk3M0M0Ljg3NzcxIC0xLjIxOTQzIDQuODEzOTUgLTEuMjQzMzQgNC43NTgxNiAtMS4yNDMzNEM0LjY2MjUyIC0xLjI0MzM0IDQuNjQ2NTggLTEuMTg3NTUgNC42MjI2NyAtMS4xMDc4NUM0LjQzMTM4IC0wLjQ1NDI5NiA0LjA5NjY0IC0wLjE0MzQ2MiAzLjc5Mzc3IC0wLjE0MzQ2MkMzLjY2NjI1IC0wLjE0MzQ2MiAzLjYwMjQ5IC0wLjIyMzE2MyAzLjYwMjQ5IC0wLjQwNjQ3NlMzLjY2NjI1IC0wLjc2NTEzMSAzLjc0NTk1IC0wLjk2NDM4NEMzLjg2NTUgLTEuMjY3MjUgNC4yMTYxOSAtMi4xODM4MSA0LjIxNjE5IC0yLjYzMDE0QzQuMjE2MTkgLTMuMjI3OSAzLjgwMTc0IC0zLjUxNDgyIDMuMjI3OSAtMy41MTQ4MkMyLjU4MjMyIC0zLjUxNDgyIDIuMTY3ODcgLTMuMTI0MjggMS45MzY3NCAtMi44MjE0MkMxLjg4MDk1IC0zLjI1OTc4IDEuNTMwMjYgLTMuNTE0ODIgMS4xMjM3OSAtMy41MTQ4MkMwLjgzNjg2MiAtMy41MTQ4MiAwLjYzNzYwOSAtMy4zMzE1MSAwLjUxMDA4NyAtMy4wODQ0M0MwLjMxODgwNCAtMi43MDk4NCAwLjIzOTEwMyAtMi4zMTEzMyAwLjIzOTEwMyAtMi4yOTUzOUMwLjIzOTEwMyAtMi4yMjM2NiAwLjI5NDg5NCAtMi4xOTE3OCAwLjM1ODY1NSAtMi4xOTE3OEMwLjQ2MjI2NyAtMi4xOTE3OCAwLjQ3MDIzNyAtMi4yMjM2NiAwLjUyNjAyNyAtMi40MzA4OEMwLjYyMTY2OSAtMi44MjE0MiAwLjc2NTEzMSAtMy4yOTE2NiAxLjA5OTg4IC0zLjI5MTY2QzEuMzA3MSAtMy4yOTE2NiAxLjM1NDkyIC0zLjA5MjQgMS4zNTQ5MiAtMi45MTcwNkMxLjM1NDkyIC0yLjc3MzYgMS4zMTUwNyAtMi42MjIxNyAxLjI1MTMxIC0yLjM1OTE1QzEuMjM1MzcgLTIuMjk1MzkgMS4xMTU4MiAtMS44MjUxNiAxLjA4Mzk0IC0xLjcxMzU3TDAuNzg5MDQxIC0wLjUxODA1N0MwLjc1NzE2MSAtMC4zOTg1MDYgMC43MDkzNCAtMC4xOTkyNTMgMC43MDkzNCAtMC4xNjczNzJDMC43MDkzNCAwLjAxNTk0MDIgMC44NjA3NzIgMC4wNzk3MDExIDAuOTY0Mzg0IDAuMDc5NzAxMUMxLjEwNzg1IDAuMDc5NzAxMSAxLjIyNzQgLTAuMDE1OTQwMiAxLjI4MzE5IC0wLjExMTU4MkMxLjMwNzEgLTAuMTU5NDAyIDEuMzcwODYgLTAuNDMwMzg2IDEuNDEwNzEgLTAuNTk3NzU4TDEuNTk0MDIgLTEuMzA3MVonIGlkPSdnMy0xMTAnLz4KPHBhdGggZD0nTTMuOTY5MTIgLTIuMTM1OTlDMy45NjkxMiAtMi45MTcwNiAzLjQxMTIxIC0zLjUxNDgyIDIuNTgyMzIgLTMuNTE0ODJDMS40NTA1NiAtMy41MTQ4MiAwLjM1MDY4NSAtMi40MTQ5NCAwLjM1MDY4NSAtMS4yOTkxM0MwLjM1MDY4NSAtMC40ODYxNzcgMC45MjQ1MzMgMC4wNzk3MDExIDEuNzM3NDggMC4wNzk3MDExQzIuODc3MjEgMC4wNzk3MDExIDMuOTY5MTIgLTEuMDM2MTEgMy45NjkxMiAtMi4xMzU5OVpNMS43NDU0NSAtMC4xNDM0NjJDMS40NjY1IC0wLjE0MzQ2MiAwLjk5NjI2NCAtMC4yODY5MjQgMC45OTYyNjQgLTEuMDIwMTdDMC45OTYyNjQgLTEuMzQ2OTUgMS4xNDc3IC0yLjIwNzcyIDEuNTMwMjYgLTIuNzAxODdDMS45MjA4IC0zLjIwMzk5IDIuMzU5MTUgLTMuMjkxNjYgMi41NzQzNSAtMy4yOTE2NkMyLjkwMTEyIC0zLjI5MTY2IDMuMzIzNTQgLTMuMDkyNCAzLjMyMzU0IC0yLjQyMjkxQzMuMzIzNTQgLTIuMTA0MTEgMy4xODAwNyAtMS4zNDY5NSAyLjg3NzIxIC0wLjg2ODc0MkMyLjU4MjMyIC0wLjQxNDQ0NiAyLjE0Mzk2IC0wLjE0MzQ2MiAxLjc0NTQ1IC0wLjE0MzQ2MlonIGlkPSdnMy0xMTEnLz4KPHBhdGggZD0nTTEuNzYxMzkgLTMuMTcyMUgyLjU0MjQ3QzIuNjkzOSAtMy4xNzIxIDIuNzg5NTQgLTMuMTcyMSAyLjc4OTU0IC0zLjMyMzU0QzIuNzg5NTQgLTMuNDM1MTIgMi42ODU5MyAtMy40MzUxMiAyLjU1MDQ0IC0zLjQzNTEySDEuODI1MTZMMi4xMTIwOCAtNC41NjY4N0MyLjE0Mzk2IC00LjY4NjQzIDIuMTQzOTYgLTQuNzI2MjggMi4xNDM5NiAtNC43MzQyNUMyLjE0Mzk2IC00LjkwMTYyIDIuMDE2NDQgLTQuOTgxMzIgMS44ODA5NSAtNC45ODEzMkMxLjYwOTk2IC00Ljk4MTMyIDEuNTU0MTcgLTQuNzY2MTMgMS40NjY1IC00LjQwNzQ3TDEuMjE5NDMgLTMuNDM1MTJIMC40NTQyOTZDMC4zMDI4NjQgLTMuNDM1MTIgMC4xOTkyNTMgLTMuNDM1MTIgMC4xOTkyNTMgLTMuMjgzNjlDMC4xOTkyNTMgLTMuMTcyMSAwLjMwMjg2NCAtMy4xNzIxIDAuNDM4MzU2IC0zLjE3MjFIMS4xNTU2N0wwLjY3NzQ2IC0xLjI1OTI4QzAuNjI5NjM5IC0xLjA2MDAyIDAuNTU3OTA4IC0wLjc4MTA3MSAwLjU1NzkwOCAtMC42Njk0ODlDMC41NTc5MDggLTAuMTkxMjgzIDAuOTQ4NDQzIDAuMDc5NzAxMSAxLjM3MDg2IDAuMDc5NzAxMUMyLjIyMzY2IDAuMDc5NzAxMSAyLjcwOTg0IC0xLjA0NDA4IDIuNzA5ODQgLTEuMTM5NzNDMi43MDk4NCAtMS4yMjc0IDIuNjM4MTEgLTEuMjQzMzQgMi41OTAyOSAtMS4yNDMzNEMyLjUwMjYyIC0xLjI0MzM0IDIuNDk0NjUgLTEuMjExNDYgMi40Mzg4NSAtMS4wOTE5MUMyLjI3OTQ1IC0wLjcwOTM0IDEuODgwOTUgLTAuMTQzNDYyIDEuMzk0NzcgLTAuMTQzNDYyQzEuMjI3NCAtMC4xNDM0NjIgMS4xMzE3NiAtMC4yNTUwNDQgMS4xMzE3NiAtMC41MTgwNTdDMS4xMzE3NiAtMC42Njk0ODkgMS4xNTU2NyAtMC43NTcxNjEgMS4xNzk1OCAtMC44NjA3NzJMMS43NjEzOSAtMy4xNzIxWicgaWQ9J2czLTExNicvPgo8cGF0aCBkPSdNMi4xNDU5NSAtMy43OTU3N0MyLjE0NTk1IC0zLjk3NTA5IDIuMTIyMDQgLTMuOTc1MDkgMS45NDI3MSAtMy45NzUwOUMxLjU0ODE5IC0zLjU5MjUzIDAuOTM4NDgxIC0zLjU5MjUzIDAuNzIzMjg4IC0zLjU5MjUzVi0zLjM1OTRDMC44Nzg3MDUgLTMuMzU5NCAxLjI3MzIzIC0zLjM1OTQgMS42MzE4OCAtMy41MjY3N1YtMC41MDgwOTVDMS42MzE4OCAtMC4zMTA4MzQgMS42MzE4OCAtMC4yMzMxMjYgMS4wMTYxOSAtMC4yMzMxMjZIMC43NTkxNTNWMEMxLjA4NzkyIC0wLjAyMzkxMDMgMS41NTQxNyAtMC4wMjM5MTAzIDEuODg4OTIgLTAuMDIzOTEwM1MyLjY4OTkxIC0wLjAyMzkxMDMgMy4wMTg2OCAwVi0wLjIzMzEyNkgyLjc2MTY0QzIuMTQ1OTUgLTAuMjMzMTI2IDIuMTQ1OTUgLTAuMzEwODM0IDIuMTQ1OTUgLTAuNTA4MDk1Vi0zLjc5NTc3WicgaWQ9J2c1LTQ5Jy8+CjxwYXRoIGQ9J00zLjIxNTk0IC0xLjExNzgxSDIuOTk0NzdDMi45ODI4MSAtMS4wMzQxMiAyLjkyMzA0IC0wLjYzOTYwMSAyLjgzMzM3IC0wLjU3Mzg0OEMyLjc5MTUzIC0wLjUzNzk4MyAyLjMwNzM1IC0wLjUzNzk4MyAyLjIyMzY2IC0wLjUzNzk4M0gxLjEwNTg1TDEuODcwOTggLTEuMTU5NjVDMi4wNzQyMiAtMS4zMjEwNSAyLjYwNjIzIC0xLjcwMzYxIDIuNzkxNTMgLTEuODgyOTRDMi45NzA4NiAtMi4wNjIyNyAzLjIxNTk0IC0yLjM2NzEyIDMuMjE1OTQgLTIuNzkxNTNDMy4yMTU5NCAtMy41Mzg3MyAyLjU0MDQ3IC0zLjk3NTA5IDEuNzM5NDggLTMuOTc1MDlDMC45NjgzNjkgLTMuOTc1MDkgMC40MzAzODYgLTMuNDY3IDAuNDMwMzg2IC0yLjkwNTExQzAuNDMwMzg2IC0yLjYwMDI1IDAuNjg3NDIyIC0yLjU2NDM4IDAuNzUzMTc2IC0yLjU2NDM4QzAuOTAyNjE1IC0yLjU2NDM4IDEuMDc1OTcgLTIuNjcxOTggMS4wNzU5NyAtMi44ODcxN0MxLjA3NTk3IC0zLjAxODY4IDAuOTk4MjU3IC0zLjIwOTk2IDAuNzM1MjQzIC0zLjIwOTk2QzAuODcyNzI3IC0zLjUxNDgyIDEuMjM3MzYgLTMuNzQxOTcgMS42NDk4MSAtMy43NDE5N0MyLjI3NzQ2IC0zLjc0MTk3IDIuNjEyMiAtMy4yNzU3MiAyLjYxMjIgLTIuNzkxNTNDMi42MTIyIC0yLjM2NzEyIDIuMzMxMjYgLTEuOTMwNzYgMS45MTI4MyAtMS41NDgxOUwwLjQ5NjEzOSAtMC4yNTEwNTlDMC40MzYzNjQgLTAuMTkxMjgzIDAuNDMwMzg2IC0wLjE4NTMwNSAwLjQzMDM4NiAwSDMuMDMwNjRMMy4yMTU5NCAtMS4xMTc4MVonIGlkPSdnNS01MCcvPgo8cGF0aCBkPSdNNC42NzQ0NyAtNC40OTUxNEM0LjQ0NzMyIC00LjQ5NTE0IDQuMzM5NzMgLTQuNDk1MTQgNC4xNzIzNSAtNC4zNTE2OEM0LjEwMDYyIC00LjI5MTkxIDMuOTY5MTIgLTQuMTEyNTggMy45NjkxMiAtMy45MjEzQzMuOTY5MTIgLTMuNjgyMTkgNC4xNDg0NCAtMy41Mzg3MyA0LjM3NTU5IC0zLjUzODczQzQuNjYyNTIgLTMuNTM4NzMgNC45ODUzMSAtMy43Nzc4MyA0Ljk4NTMxIC00LjI1NjA0QzQuOTg1MzEgLTQuODI5ODkgNC40MzUzNyAtNS4yNzIyMyAzLjYxMDQ2IC01LjI3MjIzQzIuMDQ0MzMgLTUuMjcyMjMgMC40NzgyMDcgLTMuNTYyNjQgMC40NzgyMDcgLTEuODY1MDFDMC40NzgyMDcgLTAuODI0OTA3IDEuMTIzNzkgMC4xMTk1NTIgMi4zNDMyMSAwLjExOTU1MkMzLjk2OTEyIDAuMTE5NTUyIDQuOTk3MjYgLTEuMTQ3NyA0Ljk5NzI2IC0xLjMwMzExQzQuOTk3MjYgLTEuMzc0ODQgNC45MjU1MyAtMS40MzQ2MiA0Ljg3NzcxIC0xLjQzNDYyQzQuODQxODQgLTEuNDM0NjIgNC44Mjk4OSAtMS40MjI2NyA0LjcyMjI5IC0xLjMxNTA3QzMuOTU3MTYgLTAuMjk4ODc5IDIuODIxNDIgLTAuMTE5NTUyIDIuMzY3MTIgLTAuMTE5NTUyQzEuNTQyMjIgLTAuMTE5NTUyIDEuMjc5MiAtMC44MzY4NjIgMS4yNzkyIC0xLjQzNDYyQzEuMjc5MiAtMS44NTMwNSAxLjQ4MjQ0IC0zLjAxMjcgMS45MTI4MyAtMy44MjU2NUMyLjIyMzY2IC00LjM4NzU1IDIuODY5MjQgLTUuMDMzMTMgMy42MjI0MiAtNS4wMzMxM0MzLjc3NzgzIC01LjAzMzEzIDQuNDM1MzcgLTUuMDA5MjIgNC42NzQ0NyAtNC40OTUxNFonIGlkPSdnNC05OScvPgo8cGF0aCBkPSdNMi4xMzk5OCAtMi43NzM2QzIuNDYyNzYgLTIuNzczNiAzLjI3NTcyIC0yLjc5NzUxIDMuODQ5NTYgLTMuMDEyN0M0Ljc1ODE2IC0zLjM1OTQgNC44NDE4NCAtNC4wNTI4IDQuODQxODQgLTQuMjY4QzQuODQxODQgLTQuNzk0MDIgNC4zODc1NSAtNS4yNzIyMyAzLjU5ODUxIC01LjI3MjIzQzIuMzQzMjEgLTUuMjcyMjMgMC41Mzc5ODMgLTQuMTM2NDkgMC41Mzc5ODMgLTIuMDA4NDdDMC41Mzc5ODMgLTAuNzUzMTc2IDEuMjU1MjkgMC4xMTk1NTIgMi4zNDMyMSAwLjExOTU1MkMzLjk2OTEyIDAuMTE5NTUyIDQuOTk3MjYgLTEuMTQ3NyA0Ljk5NzI2IC0xLjMwMzExQzQuOTk3MjYgLTEuMzc0ODQgNC45MjU1MyAtMS40MzQ2MiA0Ljg3NzcxIC0xLjQzNDYyQzQuODQxODQgLTEuNDM0NjIgNC44Mjk4OSAtMS40MjI2NyA0LjcyMjI5IC0xLjMxNTA3QzMuOTU3MTYgLTAuMjk4ODc5IDIuODIxNDIgLTAuMTE5NTUyIDIuMzY3MTIgLTAuMTE5NTUyQzEuNjg1NjggLTAuMTE5NTUyIDEuMzI3MDIgLTAuNjU3NTM0IDEuMzI3MDIgLTEuNTQyMjJDMS4zMjcwMiAtMS43MDk1OSAxLjMyNzAyIC0yLjAwODQ3IDEuNTA2MzUgLTIuNzczNkgyLjEzOTk4Wk0xLjU2NjEzIC0zLjAxMjdDMi4wODAyIC00Ljg1MzggMy4yMTU5NCAtNS4wMzMxMyAzLjU5ODUxIC01LjAzMzEzQzQuMTI0NTMgLTUuMDMzMTMgNC40ODMxOSAtNC43MjIyOSA0LjQ4MzE5IC00LjI2OEM0LjQ4MzE5IC0zLjAxMjcgMi41NzAzNiAtMy4wMTI3IDIuMDY4MjQgLTMuMDEyN0gxLjU2NjEzWicgaWQ9J2c0LTEwMScvPgo8cGF0aCBkPSdNNS4zMzIgLTQuODA1OThDNS41NzExMSAtNC44MDU5OCA1LjY2Njc1IC00LjgwNTk4IDUuNjY2NzUgLTUuMDMzMTNDNS42NjY3NSAtNS4xNTI2OCA1LjU3MTExIC01LjE1MjY4IDUuMzU1OTIgLTUuMTUyNjhINC4zODc1NUM0LjYxNDY5IC02LjM4NDA2IDQuNzgyMDcgLTcuMjMyODggNC44Nzc3MSAtNy42MTU0NEM0Ljk0OTQ0IC03LjkwMjM3IDUuMjAwNSAtOC4xNzczMyA1LjUxMTMzIC04LjE3NzMzQzUuNzYyMzkgLTguMTc3MzMgNi4wMTM0NSAtOC4wNjk3NCA2LjEzMyAtNy45NjIxNEM1LjY2Njc1IC03LjkxNDMyIDUuNTIzMjkgLTcuNTY3NjIgNS41MjMyOSAtNy4zNjQzOEM1LjUyMzI5IC03LjEyNTI4IDUuNzAyNjIgLTYuOTgxODIgNS45Mjk3NiAtNi45ODE4MkM2LjE2ODg3IC02Ljk4MTgyIDYuNTI3NTIgLTcuMTg1MDYgNi41Mjc1MiAtNy42MzkzNUM2LjUyNzUyIC04LjE0MTQ3IDYuMDI1NCAtOC40MTY0NCA1LjQ5OTM4IC04LjQxNjQ0QzQuOTg1MzEgLTguNDE2NDQgNC40ODMxOSAtOC4wMzM4NyA0LjI0NDA4IC03LjU2NzYyQzQuMDI4ODkgLTcuMTQ5MTkgMy45MDkzNCAtNi43MTg4IDMuNjM0MzcgLTUuMTUyNjhIMi44MzMzN0MyLjYwNjIzIC01LjE1MjY4IDIuNDg2NjcgLTUuMTUyNjggMi40ODY2NyAtNC45Mzc0OEMyLjQ4NjY3IC00LjgwNTk4IDIuNTU4NDEgLTQuODA1OTggMi43OTc1MSAtNC44MDU5OEgzLjU2MjY0QzMuMzQ3NDUgLTMuNjk0MTUgMi44NTcyOSAtMC45OTIyNzkgMi41ODIzMiAwLjI4NjkyNEMyLjM3OTA4IDEuMzI3MDIgMi4xOTk3NSAyLjE5OTc1IDEuNjAxOTkgMi4xOTk3NUMxLjU2NjEzIDIuMTk5NzUgMS4yMTk0MyAyLjE5OTc1IDEuMDA0MjMgMS45NzI2QzEuNjEzOTUgMS45MjQ3OCAxLjYxMzk1IDEuMzk4NzUgMS42MTM5NSAxLjM4NjhDMS42MTM5NSAxLjE0NzcgMS40MzQ2MiAxLjAwNDIzIDEuMjA3NDcgMS4wMDQyM0MwLjk2ODM2OSAxLjAwNDIzIDAuNjA5NzE0IDEuMjA3NDcgMC42MDk3MTQgMS42NjE3N0MwLjYwOTcxNCAyLjE3NTg0IDEuMTM1NzQgMi40Mzg4NSAxLjYwMTk5IDIuNDM4ODVDMi44MjE0MiAyLjQzODg1IDMuMzIzNTQgMC4yNTEwNTkgMy40NTUwNCAtMC4zNDY3QzMuNjcwMjQgLTEuMjY3MjUgNC4yNTYwNCAtNC40NDczMiA0LjMxNTgyIC00LjgwNTk4SDUuMzMyWicgaWQ9J2c0LTEwMicvPgo8cGF0aCBkPSdNMy4zODMzMSAtMS43MDk1OUMzLjM4MzMxIC0xLjc2OTM2IDMuMzM1NDkgLTEuODE3MTkgMy4yNjM3NiAtMS44MTcxOUMzLjE1NjE2IC0xLjgxNzE5IDMuMTQ0MjEgLTEuNzgxMzIgMy4wODQ0MyAtMS41NzgwOEMyLjc3MzYgLTAuNDkwMTYyIDIuMjgzNDQgLTAuMTE5NTUyIDEuODg4OTIgLTAuMTE5NTUyQzEuNzQ1NDUgLTAuMTE5NTUyIDEuNTc4MDggLTAuMTU1NDE3IDEuNTc4MDggLTAuNTE0MDcyQzEuNTc4MDggLTAuODM2ODYyIDEuNzIxNTQgLTEuMTk1NTIgMS44NTMwNSAtMS41NTQxN0wyLjY4OTkxIC0zLjc3NzgzQzIuNzI1NzggLTMuODczNDcgMi44MDk0NiAtNC4wODg2NyAyLjgwOTQ2IC00LjMxNTgyQzIuODA5NDYgLTQuODE3OTMgMi40NTA4MSAtNS4yNzIyMyAxLjg2NTAxIC01LjI3MjIzQzAuNzY1MTMxIC01LjI3MjIzIDAuMzIyNzkgLTMuNTM4NzMgMC4zMjI3OSAtMy40NDMwOUMwLjMyMjc5IC0zLjM5NTI3IDAuMzcwNjEgLTMuMzM1NDkgMC40NTQyOTYgLTMuMzM1NDlDMC41NjE4OTMgLTMuMzM1NDkgMC41NzM4NDggLTMuMzgzMzEgMC42MjE2NjkgLTMuNTUwNjhDMC45MDg1OTMgLTQuNTU0OTIgMS4zNjI4OSAtNS4wMzMxMyAxLjgyOTE0IC01LjAzMzEzQzEuOTM2NzQgLTUuMDMzMTMgMi4xMzk5OCAtNS4wMjExNyAyLjEzOTk4IC00LjYzODYxQzIuMTM5OTggLTQuMzI3NzcgMS45ODQ1NiAtMy45MzMyNSAxLjg4ODkyIC0zLjY3MDI0TDEuMDUyMDUgLTEuNDQ2NThDMC45ODAzMjQgLTEuMjU1MjkgMC45MDg1OTMgLTEuMDY0MDEgMC45MDg1OTMgLTAuODQ4ODE3QzAuOTA4NTkzIC0wLjMxMDgzNCAxLjI3OTIgMC4xMTk1NTIgMS44NTMwNSAwLjExOTU1MkMyLjk1MjkzIDAuMTE5NTUyIDMuMzgzMzEgLTEuNjI1OSAzLjM4MzMxIC0xLjcwOTU5Wk0zLjI4NzY3IC03LjQ2MDAyQzMuMjg3NjcgLTcuNjM5MzUgMy4xNDQyMSAtNy44NTQ1NSAyLjg4MTIgLTcuODU0NTVDMi42MDYyMyAtNy44NTQ1NSAyLjI5NTM5IC03LjU5MTUzIDIuMjk1MzkgLTcuMjgwN0MyLjI5NTM5IC02Ljk4MTgyIDIuNTQ2NDUgLTYuODg2MTggMi42ODk5MSAtNi44ODYxOEMzLjAxMjcgLTYuODg2MTggMy4yODc2NyAtNy4xOTcwMSAzLjI4NzY3IC03LjQ2MDAyWicgaWQ9J2c0LTEwNScvPgo8cGF0aCBkPSdNMi40NjI3NiAtMy41MDI4NkMyLjQ4NjY3IC0zLjU3NDYgMi43ODU1NSAtNC4xNzIzNSAzLjIyNzkgLTQuNTU0OTJDMy41Mzg3MyAtNC44NDE4NCAzLjk0NTIxIC01LjAzMzEzIDQuNDExNDYgLTUuMDMzMTNDNC44ODk2NiAtNS4wMzMxMyA1LjA1NzA0IC00LjY3NDQ3IDUuMDU3MDQgLTQuMTk2MjZDNS4wNTcwNCAtMy41MTQ4MiA0LjU2Njg3IC0yLjE1MTkzIDQuMzI3NzcgLTEuNTA2MzVDNC4yMjAxNyAtMS4yMTk0MyA0LjE2MDQgLTEuMDY0MDEgNC4xNjA0IC0wLjg0ODgxN0M0LjE2MDQgLTAuMzEwODM0IDQuNTMxMDEgMC4xMTk1NTIgNS4xMDQ4NiAwLjExOTU1MkM2LjIxNjY5IDAuMTE5NTUyIDYuNjM1MTIgLTEuNjM3ODYgNi42MzUxMiAtMS43MDk1OUM2LjYzNTEyIC0xLjc2OTM2IDYuNTg3MyAtMS44MTcxOSA2LjUxNTU3IC0xLjgxNzE5QzYuNDA3OTcgLTEuODE3MTkgNi4zOTYwMSAtMS43ODEzMiA2LjMzNjI0IC0xLjU3ODA4QzYuMDYxMjcgLTAuNTk3NzU4IDUuNjA2OTcgLTAuMTE5NTUyIDUuMTQwNzIgLTAuMTE5NTUyQzUuMDIxMTcgLTAuMTE5NTUyIDQuODI5ODkgLTAuMTMxNTA3IDQuODI5ODkgLTAuNTE0MDcyQzQuODI5ODkgLTAuODEyOTUxIDQuOTYxMzkgLTEuMTcxNjEgNS4wMzMxMyAtMS4zMzg5OEM1LjI3MjIzIC0xLjk5NjUxIDUuNzc0MzUgLTMuMzM1NDkgNS43NzQzNSAtNC4wMTY5NEM1Ljc3NDM1IC00LjczNDI1IDUuMzU1OTIgLTUuMjcyMjMgNC40NDczMiAtNS4yNzIyM0MzLjM4MzMxIC01LjI3MjIzIDIuODIxNDIgLTQuNTE5MDUgMi42MDYyMyAtNC4yMjAxN0MyLjU3MDM2IC00LjkwMTYyIDIuMDgwMiAtNS4yNzIyMyAxLjU1NDE3IC01LjI3MjIzQzEuMTcxNjEgLTUuMjcyMjMgMC45MDg1OTMgLTUuMDQ1MDggMC43MDUzNTUgLTQuNjM4NjFDMC40OTAxNjIgLTQuMjA4MjIgMC4zMjI3OSAtMy40OTA5MSAwLjMyMjc5IC0zLjQ0MzA5UzAuMzcwNjEgLTMuMzM1NDkgMC40NTQyOTYgLTMuMzM1NDlDMC41NDk5MzggLTMuMzM1NDkgMC41NjE4OTMgLTMuMzQ3NDUgMC42MzM2MjQgLTMuNjIyNDJDMC44MjQ5MDcgLTQuMzUxNjggMS4wNDAxIC01LjAzMzEzIDEuNTE4MzEgLTUuMDMzMTNDMS43OTMyOCAtNS4wMzMxMyAxLjg4ODkyIC00Ljg0MTg0IDEuODg4OTIgLTQuNDgzMTlDMS44ODg5MiAtNC4yMjAxNyAxLjc2OTM2IC0zLjc1MzkyIDEuNjg1NjggLTMuMzgzMzFMMS4zNTA5MyAtMi4wOTIxNUMxLjMwMzExIC0xLjg2NTAxIDEuMTcxNjEgLTEuMzI3MDIgMS4xMTE4MyAtMS4xMTE4M0MxLjAyODE0IC0wLjgwMDk5NiAwLjg5NjYzOCAtMC4yMzkxMDMgMC44OTY2MzggLTAuMTc5MzI4QzAuODk2NjM4IC0wLjAxMTk1NTIgMS4wMjgxNCAwLjExOTU1MiAxLjIwNzQ3IDAuMTE5NTUyQzEuMzUwOTMgMC4xMTk1NTIgMS41MTgzMSAwLjA0NzgyMDcgMS42MTM5NSAtMC4xMzE1MDdDMS42Mzc4NiAtMC4xOTEyODMgMS43NDU0NSAtMC42MDk3MTQgMS44MDUyMyAtMC44NDg4MTdMMi4wNjgyNCAtMS45MjQ3OEwyLjQ2Mjc2IC0zLjUwMjg2WicgaWQ9J2c0LTExMCcvPgo8cGF0aCBkPSdNNS40NTE1NiAtMy4yODc2N0M1LjQ1MTU2IC00LjQyMzQxIDQuNzEwMzQgLTUuMjcyMjMgMy42MjI0MiAtNS4yNzIyM0MyLjA0NDMzIC01LjI3MjIzIDAuNDkwMTYyIC0zLjU1MDY4IDAuNDkwMTYyIC0xLjg2NTAxQzAuNDkwMTYyIC0wLjcyOTI2NSAxLjIzMTM4IDAuMTE5NTUyIDIuMzE5MyAwLjExOTU1MkMzLjkwOTM0IDAuMTE5NTUyIDUuNDUxNTYgLTEuNjAxOTkgNS40NTE1NiAtMy4yODc2N1pNMi4zMzEyNiAtMC4xMTk1NTJDMS43MzM1IC0wLjExOTU1MiAxLjI5MTE2IC0wLjU5Nzc1OCAxLjI5MTE2IC0xLjQzNDYyQzEuMjkxMTYgLTEuOTg0NTYgMS41NzgwOCAtMy4yMDM5OSAxLjkxMjgzIC0zLjgwMTc0QzIuNDUwODEgLTQuNzIyMjkgMy4xMjAzIC01LjAzMzEzIDMuNjEwNDYgLTUuMDMzMTNDNC4xOTYyNiAtNS4wMzMxMyA0LjY1MDU2IC00LjU1NDkyIDQuNjUwNTYgLTMuNzE4MDZDNC42NTA1NiAtMy4yMzk4NSA0LjM5OTUgLTEuOTYwNjUgMy45NDUyMSAtMS4yMzEzOEMzLjQ1NTA0IC0wLjQzMDM4NiAyLjc5NzUxIC0wLjExOTU1MiAyLjMzMTI2IC0wLjExOTU1MlonIGlkPSdnNC0xMTEnLz4KPHBhdGggZD0nTTIuNDAyOTkgLTQuODA1OThIMy41MDI4NkMzLjczMDAxIC00LjgwNTk4IDMuODQ5NTYgLTQuODA1OTggMy44NDk1NiAtNS4wMjExN0MzLjg0OTU2IC01LjE1MjY4IDMuNzc3ODMgLTUuMTUyNjggMy41Mzg3MyAtNS4xNTI2OEgyLjQ4NjY3TDIuOTI5MDIgLTYuODk4MTNDMi45NzY4NCAtNy4wNjU1IDIuOTc2ODQgLTcuMDg5NDEgMi45NzY4NCAtNy4xNzMxQzIuOTc2ODQgLTcuMzY0MzggMi44MjE0MiAtNy40NzE5OCAyLjY2NiAtNy40NzE5OEMyLjU3MDM2IC03LjQ3MTk4IDIuMjk1MzkgLTcuNDM2MTEgMi4xOTk3NSAtNy4wNTM1NUwxLjczMzUgLTUuMTUyNjhIMC42MDk3MTRDMC4zNzA2MSAtNS4xNTI2OCAwLjI2MzAxNCAtNS4xNTI2OCAwLjI2MzAxNCAtNC45MjU1M0MwLjI2MzAxNCAtNC44MDU5OCAwLjM0NjcgLTQuODA1OTggMC41NzM4NDggLTQuODA1OThIMS42Mzc4NkwwLjg0ODgxNyAtMS42NDk4MUMwLjc1MzE3NiAtMS4yMzEzOCAwLjcxNzMxIC0xLjExMTgzIDAuNzE3MzEgLTAuOTU2NDEzQzAuNzE3MzEgLTAuMzk0NTIxIDEuMTExODMgMC4xMTk1NTIgMS43ODEzMiAwLjExOTU1MkMyLjk4ODc5IDAuMTE5NTUyIDMuNjM0MzcgLTEuNjI1OSAzLjYzNDM3IC0xLjcwOTU5QzMuNjM0MzcgLTEuNzgxMzIgMy41ODY1NSAtMS44MTcxOSAzLjUxNDgyIC0xLjgxNzE5QzMuNDkwOTEgLTEuODE3MTkgMy40NDMwOSAtMS44MTcxOSAzLjQxOTE4IC0xLjc2OTM2QzMuNDA3MjIgLTEuNzU3NDEgMy4zOTUyNyAtMS43NDU0NSAzLjMxMTU4IC0xLjU1NDE3QzMuMDYwNTIgLTAuOTU2NDEzIDIuNTEwNTkgLTAuMTE5NTUyIDEuODE3MTkgLTAuMTE5NTUyQzEuNDU4NTMgLTAuMTE5NTUyIDEuNDM0NjIgLTAuNDE4NDMxIDEuNDM0NjIgLTAuNjgxNDQ1QzEuNDM0NjIgLTAuNjkzNCAxLjQzNDYyIC0wLjkyMDU0OCAxLjQ3MDQ5IC0xLjA2NDAxTDIuNDAyOTkgLTQuODA1OThaJyBpZD0nZzQtMTE2Jy8+CjxwYXRoIGQ9J004LjA2OTc0IC0zLjg3MzQ3QzguMjM3MTEgLTMuODczNDcgOC40NTIzIC0zLjg3MzQ3IDguNDUyMyAtNC4wODg2N0M4LjQ1MjMgLTQuMzE1ODIgOC4yNDkwNyAtNC4zMTU4MiA4LjA2OTc0IC00LjMxNTgySDEuMDI4MTRDMC44NjA3NzIgLTQuMzE1ODIgMC42NDU1NzkgLTQuMzE1ODIgMC42NDU1NzkgLTQuMTAwNjJDMC42NDU1NzkgLTMuODczNDcgMC44NDg4MTcgLTMuODczNDcgMS4wMjgxNCAtMy44NzM0N0g4LjA2OTc0Wk04LjA2OTc0IC0xLjY0OTgxQzguMjM3MTEgLTEuNjQ5ODEgOC40NTIzIC0xLjY0OTgxIDguNDUyMyAtMS44NjUwMUM4LjQ1MjMgLTIuMDkyMTUgOC4yNDkwNyAtMi4wOTIxNSA4LjA2OTc0IC0yLjA5MjE1SDEuMDI4MTRDMC44NjA3NzIgLTIuMDkyMTUgMC42NDU1NzkgLTIuMDkyMTUgMC42NDU1NzkgLTEuODc2OTZDMC42NDU1NzkgLTEuNjQ5ODEgMC44NDg4MTcgLTEuNjQ5ODEgMS4wMjgxNCAtMS42NDk4MUg4LjA2OTc0WicgaWQ9J2c3LTYxJy8+CjxwYXRoIGQ9J000Ljg1MzggLTEuMzI3MDJDNC45NDM0NiAtMS4zNjg4NyA1LjAwMzI0IC0xLjM5ODc1IDUuMDAzMjQgLTEuNDk0NEM1LjAwMzI0IC0xLjU2NjEzIDQuOTY3MzcgLTEuNjEzOTUgNC44NjU3NSAtMS42NjE3N0wxLjAzNDEyIC0zLjQ3ODk1QzAuOTUwNDM2IC0zLjUyMDggMC45MDg1OTMgLTMuNTIwOCAwLjkwMjYxNSAtMy41MjA4QzAuODE4OTI5IC0zLjUyMDggMC43NDcxOTggLTMuNDQ5MDcgMC43NDcxOTggLTMuMzY1MzhDMC43NDcxOTggLTMuMjk5NjMgMC43ODMwNjQgLTMuMjQ1ODMgMC44ODQ2ODIgLTMuMTk4MDFMNC40ODMxOSAtMS40OTQ0TDAuODk2NjM4IDAuMjA5MjE1QzAuODA2OTc0IDAuMjUxMDU5IDAuNzQ3MTk4IDAuMjgwOTQ2IDAuNzQ3MTk4IDAuMzc2NTg4QzAuNzQ3MTk4IDAuNDYwMjc0IDAuODE4OTI5IDAuNTMyMDA1IDAuOTAyNjE1IDAuNTMyMDA1QzAuOTIwNTQ4IDAuNTMyMDA1IDAuOTQ0NDU4IDAuNTMyMDA1IDEuMDE2MTkgMC40OTYxMzlMNC44NTM4IC0xLjMyNzAyWicgaWQ9J2cyLTYyJy8+CjxwYXRoIGQ9J00yLjUwMjYyIC01LjA3Njk2QzIuNTAyNjIgLTUuMjkyMTUgMi40ODY2NyAtNS4zMDAxMiAyLjI3MTQ4IC01LjMwMDEyQzEuOTQ0NzEgLTQuOTgxMzIgMS41MjIyOSAtNC43OTAwNCAwLjc2NTEzMSAtNC43OTAwNFYtNC41MjcwMkMwLjk4MDMyNCAtNC41MjcwMiAxLjQxMDcxIC00LjUyNzAyIDEuODcyOTggLTQuNzQyMjJWLTAuNjUzNTQ5QzEuODcyOTggLTAuMzU4NjU1IDEuODQ5MDcgLTAuMjYzMDE0IDEuMDkxOTEgLTAuMjYzMDE0SDAuODEyOTUxVjBDMS4xMzk3MyAtMC4wMjM5MTAzIDEuODI1MTYgLTAuMDIzOTEwMyAyLjE4MzgxIC0wLjAyMzkxMDNTMy4yMzU4NyAtMC4wMjM5MTAzIDMuNTYyNjQgMFYtMC4yNjMwMTRIMy4yODM2OUMyLjUyNjUzIC0wLjI2MzAxNCAyLjUwMjYyIC0wLjM1ODY1NSAyLjUwMjYyIC0wLjY1MzU0OVYtNS4wNzY5NlonIGlkPSdnNi00OScvPgo8cGF0aCBkPSdNMi4yNDc1NyAtMS42MjU5QzIuMzc1MDkgLTEuNzQ1NDUgMi43MDk4NCAtMi4wMDg0NyAyLjgzNzM2IC0yLjEyMDA1QzMuMzMxNTEgLTIuNTc0MzUgMy44MDE3NCAtMy4wMTI3IDMuODAxNzQgLTMuNzM3OThDMy44MDE3NCAtNC42ODY0MyAzLjAwNDczIC01LjMwMDEyIDIuMDA4NDcgLTUuMzAwMTJDMS4wNTIwNSAtNS4zMDAxMiAwLjQyMjQxNiAtNC41NzQ4NCAwLjQyMjQxNiAtMy44NjU1QzAuNDIyNDE2IC0zLjQ3NDk3IDAuNzMzMjUgLTMuNDE5MTggMC44NDQ4MzIgLTMuNDE5MThDMS4wMTIyIC0zLjQxOTE4IDEuMjU5MjggLTMuNTM4NzMgMS4yNTkyOCAtMy44NDE1OUMxLjI1OTI4IC00LjI1NjA0IDAuODYwNzcyIC00LjI1NjA0IDAuNzY1MTMxIC00LjI1NjA0QzAuOTk2MjY0IC00LjgzNzg2IDEuNTMwMjYgLTUuMDM3MTEgMS45MjA4IC01LjAzNzExQzIuNjYyMDIgLTUuMDM3MTEgMy4wNDQ1OCAtNC40MDc0NyAzLjA0NDU4IC0zLjczNzk4QzMuMDQ0NTggLTIuOTA5MDkgMi40NjI3NiAtMi4zMDMzNiAxLjUyMjI5IC0xLjMzODk4TDAuNTE4MDU3IC0wLjMwMjg2NEMwLjQyMjQxNiAtMC4yMTUxOTMgMC40MjI0MTYgLTAuMTk5MjUzIDAuNDIyNDE2IDBIMy41NzA2MUwzLjgwMTc0IC0xLjQyNjY1SDMuNTU0NjdDMy41MzA3NiAtMS4yNjcyNSAzLjQ2NyAtMC44Njg3NDIgMy4zNzEzNiAtMC43MTczMUMzLjMyMzU0IC0wLjY1MzU0OSAyLjcxNzgxIC0wLjY1MzU0OSAyLjU5MDI5IC0wLjY1MzU0OUgxLjE3MTYxTDIuMjQ3NTcgLTEuNjI1OVonIGlkPSdnNi01MCcvPgo8cGF0aCBkPSdNNS41NzExMSAtMS44MDkyMkM1LjY5ODYzIC0xLjgwOTIyIDUuODczOTcgLTEuODA5MjIgNS44NzM5NyAtMS45OTI1M1M1LjY5ODYzIC0yLjE3NTg0IDUuNTcxMTEgLTIuMTc1ODRIMS4wMDQyM0MwLjg3NjcxMiAtMi4xNzU4NCAwLjcwMTM3IC0yLjE3NTg0IDAuNzAxMzcgLTEuOTkyNTNTMC44NzY3MTIgLTEuODA5MjIgMS4wMDQyMyAtMS44MDkyMkg1LjU3MTExWicgaWQ9J2cxLTAnLz4KPC9kZWZzPgo8ZyBpZD0ncGFnZTEnIHRyYW5zZm9ybT0nbWF0cml4KDEuMTMgMCAwIDEuMTMgLTYzLjk4NiAtNjMuNDM3KSc+Cjx1c2UgeD0nNTYuNDEzMycgeGxpbms6aHJlZj0nI2c0LTk5JyB5PSc2NS43NTM0Jy8+Cjx1c2UgeD0nNjEuNDMyNCcgeGxpbms6aHJlZj0nI2c0LTExMScgeT0nNjUuNzUzNCcvPgo8dXNlIHg9JzY3LjAzODgnIHhsaW5rOmhyZWY9JyNnNC0xMDEnIHk9JzY1Ljc1MzQnLz4KPHVzZSB4PSc3Mi40NDQnIHhsaW5rOmhyZWY9JyNnNC0xMDInIHk9JzY1Ljc1MzQnLz4KPHVzZSB4PSc3OS40Njg5JyB4bGluazpocmVmPScjZzQtMTAyJyB5PSc2NS43NTM0Jy8+Cjx1c2UgeD0nODYuNDkzOCcgeGxpbms6aHJlZj0nI2c0LTEwNScgeT0nNjUuNzUzNCcvPgo8dXNlIHg9JzkwLjQ3MjMnIHhsaW5rOmhyZWY9JyNnNC05OScgeT0nNjUuNzUzNCcvPgo8dXNlIHg9Jzk1LjQ5MTUnIHhsaW5rOmhyZWY9JyNnNC0xMDUnIHk9JzY1Ljc1MzQnLz4KPHVzZSB4PSc5OS40NycgeGxpbms6aHJlZj0nI2c0LTEwMScgeT0nNjUuNzUzNCcvPgo8dXNlIHg9JzEwNC44NzUnIHhsaW5rOmhyZWY9JyNnNC0xMTAnIHk9JzY1Ljc1MzQnLz4KPHVzZSB4PScxMTEuODM3JyB4bGluazpocmVmPScjZzQtMTE2JyB5PSc2NS43NTM0Jy8+Cjx1c2UgeD0nMTE2LjA0OCcgeGxpbms6aHJlZj0nI2c2LTQ5JyB5PSc2Ny41NDY3Jy8+Cjx1c2UgeD0nMTIwLjI2NicgeGxpbms6aHJlZj0nI2cxLTAnIHk9JzY3LjU0NjcnLz4KPHVzZSB4PScxMjYuODI4JyB4bGluazpocmVmPScjZzMtNjInIHk9JzY3LjU0NjcnLz4KPHVzZSB4PScxMzMuMzknIHhsaW5rOmhyZWY9JyNnNi01MCcgeT0nNjcuNTQ2NycvPgo8dXNlIHg9JzE0MS41MDgnIHhsaW5rOmhyZWY9JyNnNy02MScgeT0nNjUuNzUzNCcvPgo8dXNlIHg9JzE4NC4yMDcnIHhsaW5rOmhyZWY9JyNnNi00OScgeT0nNjEuMDQ2MycvPgo8cmVjdCBoZWlnaHQ9JzAuNDc4MTg3JyB3aWR0aD0nNjIuNDU3NicgeD0nMTU1LjA5NScgeT0nNjIuNTI1NScvPgo8dXNlIHg9JzE1NS4wOTUnIHhsaW5rOmhyZWY9JyNnMy05OScgeT0nNjkuODc2MScvPgo8dXNlIHg9JzE1OC43NDknIHhsaW5rOmhyZWY9JyNnMy0xMTEnIHk9JzY5Ljg3NjEnLz4KPHVzZSB4PScxNjIuODI3JyB4bGluazpocmVmPScjZzMtMTAxJyB5PSc2OS44NzYxJy8+Cjx1c2UgeD0nMTY2Ljc0MScgeGxpbms6aHJlZj0nI2czLTEwMicgeT0nNjkuODc2MScvPgo8dXNlIHg9JzE3MS42NzInIHhsaW5rOmhyZWY9JyNnMy0xMDInIHk9JzY5Ljg3NjEnLz4KPHVzZSB4PScxNzYuNjA0JyB4bGluazpocmVmPScjZzMtMTA1JyB5PSc2OS44NzYxJy8+Cjx1c2UgeD0nMTc5LjQ3NicgeGxpbms6aHJlZj0nI2czLTk5JyB5PSc2OS44NzYxJy8+Cjx1c2UgeD0nMTgzLjEzJyB4bGluazpocmVmPScjZzMtMTA1JyB5PSc2OS44NzYxJy8+Cjx1c2UgeD0nMTg2LjAwMycgeGxpbms6aHJlZj0nI2czLTEwMScgeT0nNjkuODc2MScvPgo8dXNlIHg9JzE4OS45MTcnIHhsaW5rOmhyZWY9JyNnMy0xMTAnIHk9JzY5Ljg3NjEnLz4KPHVzZSB4PScxOTUuMDM2JyB4bGluazpocmVmPScjZzMtMTE2JyB5PSc2OS44NzYxJy8+Cjx1c2UgeD0nMTk4LjA4MicgeGxpbms6aHJlZj0nI2c1LTUwJyB5PSc3MC45ODMnLz4KPHVzZSB4PScyMDEuNzIxJyB4bGluazpocmVmPScjZzAtMCcgeT0nNzAuOTgzJy8+Cjx1c2UgeD0nMjA3LjQ1NicgeGxpbms6aHJlZj0nI2cyLTYyJyB5PSc3MC45ODMnLz4KPHVzZSB4PScyMTMuMTkxJyB4bGluazpocmVmPScjZzUtNDknIHk9JzcwLjk4MycvPgo8L2c+Cjwvc3ZnPgo=" alt="coefficient_{1-&gt;2} = \frac{1}{coefficient_{2-&gt;1}}" title="coefficient_{1-&gt;2} = \frac{1}{coefficient_{2-&gt;1}}" />.</p>
+<h1 data-number="8" id="synthèse-à-retenir"><span class="header-section-number">8</span> Synthèse à retenir <span class="emoji" data-emoji="heart">❤️</span> !!!</h1>
+<div class="warning">
+<ul>
+<li><strong>Repérer</strong> clairement les <strong>deux grandeurs proportionnelles</strong></li>
+<li>Faire le tableau avec <strong>la grandeur recherchée dans la ligne du bas</strong></li>
+<li>Chercher <strong>le coeff. de proportionnalité</strong> avec <strong>1 dans une case du haut</strong></li>
+<li>Pour aller de <strong>haut en bas</strong> on fait <strong><em>valeur x coeff. de proportionnalité</em></strong></li>
+<li>Pour aller de <strong>bas en haut</strong> on fait <strong><em>valeur / coeff. de proportionnalité</em></strong> ou bien on cherche le coefficient de proportionnalité pour aller dans l’autre sens en calculant <strong><em>1 / coeff. de proportionnalité</em></strong></li>
+</ul>
+</div>
+<h1 class="pagebreakbefore" data-number="9" id="exercices"><span class="header-section-number">9</span> Exercices</h1>
+<h2 data-number="9.1" id="exercice-1"><span class="header-section-number">9.1</span> Exercice 1</h2>
+<p>Sur la notice d’un flacon de sirop pour la toux de 250 mL on peut lire : 0,3 mg de produit actif pour 5 mL. Calculez la masse de produit actif dans le flacon.</p>
+<p>Donnez le nom des deux grandeurs que vous devez utiliser pour résoudre ce problème ? (une des deux grandeurs est souvent celle qui est demandée, d’ailleurs, <strong>mettez cette grandeur recherchée dans la dernière ligne du tableau</strong> pour faciliter le raisonnement)<br />
+ </p>
+<hr />
+<p>Remplissez ce tableau de proportionnalité :</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">_ _ _ _ _ _ _ _ _</th>
+<th style="text-align: center;">_ _ _ _</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">_ _ _ _</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">coefficient de proportionnalité</td>
+<td style="text-align: center;">_ _ _ _</td>
+<td style="text-align: center;">_ _ _ _</td>
+<td style="text-align: center;">_ _ _ _</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">_ _ _ _ _ _ _ _ _</td>
+<td style="text-align: center;">_ _ _ _</td>
+<td style="text-align: center;">_ _ _ _</td>
+<td style="text-align: center;">_ _ _ _</td>
+</tr>
+</tbody>
+</table>
+<p>Déterminez le coefficient de proportionnalité (notez les calculs)<br />
+ </p>
+<hr />
+<p>Répondez maintenant à la question posée<br />
+ </p>
+<hr />
+<h2 data-number="9.2" id="exercice-2"><span class="header-section-number">9.2</span> Exercice 2</h2>
+<p>Calculez le nombre d’atomes de fer constituant un petit clou de masse 2,5 g sachant que la masse d’un atome de fer vaut 9,3.10<sup>-26</sup> kg.</p>
+<p>Donnez le nom des deux grandeurs que vous devez utiliser pour résoudre ce problème ? (une des deux grandeurs est souvent celle qui est demandée, d’ailleurs, <strong>mettez cette grandeur recherchée dans la dernière ligne du tableau</strong> pour faciliter le raisonnement)<br />
+ </p>
+<hr />
+<p>Remplissez ce tableau de proportionnalité :</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">_ _ _ _ _ _ _</th>
+<th style="text-align: center;">_ _ _ _ _ _</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">_ _ _ _ _ _</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">coefficient de proportionnalité</td>
+<td style="text-align: center;">_ _ _ _ _ _</td>
+<td style="text-align: center;">_ _ _ _ _ _</td>
+<td style="text-align: center;">_ _ _ _ _ _</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">_ _ _ _ _ _ _</td>
+<td style="text-align: center;">_ _ _ _ _ _</td>
+<td style="text-align: center;">_ _ _ _ _ _</td>
+<td style="text-align: center;">_ _ _ _ _ _</td>
+</tr>
+</tbody>
+</table>
+<p>Déterminez le coefficient de proportionnalité (notez les calculs)<br />
+ </p>
+<hr />
+<p>Répondez maintenant à la question posée<br />
+ </p>
+<hr />
+<h2 data-number="9.3" id="exercice-3"><span class="header-section-number">9.3</span> Exercice 3</h2>
+<p>Linus analyse ses factures d’électricité et il retrouve l’énergie consommée ainsi que les sommes payées les 2 années précédentes. Il relève son compteur et estime sa consommation de l’année en cours à 14325 kWh. Aidez Linus à prévoir le montant de sa prochaine facture.</p>
+<p>Vérifiez que vous pouvez utiliser la proportionnalité et dans ce cas, complétez ce tableau :</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Énergie (kWh)</th>
+<th style="text-align: center;">15487</th>
+<th style="text-align: center;">13688</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">_ _ _ _ _</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">coefficient de proportionnalité</td>
+<td style="text-align: center;">_ _ _ _ _</td>
+<td style="text-align: center;">_ _ _ _ _</td>
+<td style="text-align: center;">_ _ _ _ _</td>
+<td style="text-align: center;">_ _ _ _ _</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Montant de la facture (€)</td>
+<td style="text-align: center;">2013,30</td>
+<td style="text-align: center;">1779,40</td>
+<td style="text-align: center;">_ _ _ _ _</td>
+<td style="text-align: center;">_ _ _ _ _</td>
+</tr>
+</tbody>
+</table>
+<p>Déterminez si possible le coefficient de proportionnalité dans la 4<sup>ème</sup> colonne du tableau<br />
+ </p>
+<hr />
+<p>Répondez maintenant à la question posée<br />
+ </p>
+<hr />
+<h2 data-number="9.4" id="exercice-4"><span class="header-section-number">9.4</span> Exercice 4</h2>
+<p>On sait qu’il y a 6,02.10<sup>21</sup> atomes dans 0,12 g de carbone. Linus pèse sa mine de critérium constituée de carbone et trouve 0,870 g et il se demande combien elle contient d’atomes de carbone.</p>
+<p>Donnez le nom des deux grandeurs que vous devez utiliser pour résoudre ce problème. (une des deux grandeurs est souvent celle qui est demandée, d’ailleurs, <strong>mettez cette grandeur recherchée dans la dernière ligne du tableau</strong> pour faciliter le raisonnement)<br />
+ </p>
+<hr />
+<p>Remplissez ce tableau de proportionnalité :</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">_ _ _ _ _ _ _ _ _</th>
+<th style="text-align: center;">_ _ _ _ _ _</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">_ _ _ _ _ _</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">coefficient de proportionnalité</td>
+<td style="text-align: center;">_ _ _ _ _ _</td>
+<td style="text-align: center;">_ _ _ _ _ _</td>
+<td style="text-align: center;">_ _ _ _ _ _</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">_ _ _ _ _ _ _ _ _</td>
+<td style="text-align: center;">_ _ _ _ _ _</td>
+<td style="text-align: center;">_ _ _ _ _ _</td>
+<td style="text-align: center;">_ _ _ _ _ _</td>
+</tr>
+</tbody>
+</table>
+<p>Déterminez le coefficient de proportionnalité (notez les calculs)<br />
+ </p>
+<hr />
+<p>Répondez maintenant à la question posée<br />
+ </p>
+<hr />
+<h2 data-number="9.5" id="exercice-5"><span class="header-section-number">9.5</span> Exercice 5</h2>
+<p>Un article scientifique relate que des chercheurs ont isolé 13 molécules d’eau qui ont au total une masse de 3,89.10<sup>-22</sup> g. Linus lit cet article et se demande combien il y a de molécules d’eau dans son verre qui contient 200 mL. On rappelle qu’un 1 mL d’eau a une masse de 1 g.</p>
+<p>Donnez le nom des deux grandeurs que vous devez utiliser pour résoudre ce problème. (une des deux grandeurs est souvent celle qui est demandée, d’ailleurs, <strong>mettez cette grandeur recherchée dans la dernière ligne du tableau</strong> pour faciliter le raisonnement)<br />
+ </p>
+<hr />
+<p>Remplissez ce tableau de proportionnalité :</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">_ _ _ _ _ _ _ _ _</th>
+<th style="text-align: center;">_ _ _ _ _ _</th>
+<th style="text-align: center;">1</th>
+<th style="text-align: center;">_ _ _ _ _ _</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">coefficient de proportionnalité</td>
+<td style="text-align: center;">_ _ _ _ _ _</td>
+<td style="text-align: center;">_ _ _ _ _ _</td>
+<td style="text-align: center;">_ _ _ _ _ _</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">_ _ _ _ _ _ _ _ _</td>
+<td style="text-align: center;">_ _ _ _ _ _</td>
+<td style="text-align: center;">_ _ _ _ _ _</td>
+<td style="text-align: center;">_ _ _ _ _ _</td>
+</tr>
+</tbody>
+</table>
+<p>Déterminez le coefficient de proportionnalité (notez les calculs)<br />
+ </p>
+<hr />
+<p>Répondez maintenant à la question posée<br />
+ </p>
+<hr />
+<h2 data-number="9.6" id="exercice-6"><span class="header-section-number">9.6</span> Exercice 6</h2>
+<p>Dans un immeuble, les charges payées sont proportionnelles à la surface au sol de la propriété pour chacun des propriétaires.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Surface au sol en m2</th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;">61,2</th>
+<th style="text-align: center;"></th>
+<th style="text-align: center;">72,9</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Montant des charges (€)</td>
+<td style="text-align: center;">82,32</td>
+<td style="text-align: center;">171,36</td>
+<td style="text-align: center;">189,00</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p>Trouvez les valeurs manquantes du tableau des charges de quelques propriétaires et expliquez vos calculs.<br />
+ </p>
+<hr />
+<p> </p>
+<hr />
+<h2 data-number="9.7" id="exercice-7"><span class="header-section-number">9.7</span> Exercice 7</h2>
+<p>Lorsqu’il a battu le record du monde de l’heure le 6 septembre 1956, le champion Chris Boardman a parcouru 27,06 m chaque fois qu’il a fait 3 tours de pédalier. Combien de tours de pédaliers a-t-il fait pour parcourir les 56,3759 km de son record ?</p>
+<p>Donnez le nom des deux grandeurs que vous devez utiliser pour résoudre ce problème.<br />
+ </p>
+<hr />
+<p>Remplissez ce tableau de proportionnalité :</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">_ _ _ _ _ _ _ _ _</th>
+<th style="text-align: center;">_ _ _ _</th>
+<th style="text-align: center;">_ _ _ _</th>
+<th style="text-align: center;">_ _ _ _</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">coefficient de proportionnalité</td>
+<td style="text-align: center;">_ _ _ _</td>
+<td style="text-align: center;">_ _ _ _</td>
+<td style="text-align: center;">_ _ _ _</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">_ _ _ _ _ _ _ _ _</td>
+<td style="text-align: center;">_ _ _ _</td>
+<td style="text-align: center;">_ _ _ _</td>
+<td style="text-align: center;">_ _ _ _</td>
+</tr>
+</tbody>
+</table>
+<p>Déterminez le coefficient de proportionnalité (notez les calculs)<br />
+ </p>
+<hr />
+<p>Répondez maintenant à la question posée<br />
+ </p>
+<hr />
+<h2 data-number="9.8" id="exercice-8"><span class="header-section-number">9.8</span> Exercice 8</h2>
+<p>Trouvez les nombres x, y et z pour que les suites (x ; y ; 10 ; x+y+10) et (50 ; 75 ; 250 ; z) soient proportionnelles. Expliquez votre raisonnement.<br />
+ </p>
+<hr />
+<p> </p>
+<hr />
+<h2 data-number="9.9" id="exercice-9"><span class="header-section-number">9.9</span> Exercice 9</h2>
+<p>Une personne distribue l’argent de poche à ses trois enfants, Zoé, Xavier (5 ans) et Yannick proportionnellement à leur âge. Elle donne <strong>2,5 € à Xavier</strong>, <strong>4 € à Zoé</strong> et le <strong>reste à Yannick</strong>. Sachant que la somme des âges des enfants est 23 ans.</p>
+<p>Quels sont les âges de Zoé et de Yannick ?<br />
+ </p>
+<hr />
+<p>Quel est l’argent de poche de Yannick ?<br />
+ </p>
+<hr />
+<p>Quelle est la somme totale distribuée ?<br />
+ </p>
+<hr />
+<h2 data-number="9.10" id="exercice-10"><span class="header-section-number">9.10</span> Exercice 10</h2>
+<p>Sur une carte à l’échelle 1/100000, deux villes sont séparées par 4,5 cm. Quelle est la distance réelle entre elles ?</p>
+<p>Donnez le nom des deux grandeurs que vous devez utiliser pour résoudre ce problème.<br />
+ </p>
+<hr />
+<p>Remplissez ce tableau de proportionnalité :</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">_ _ _ _ _ _ _ _ _</th>
+<th style="text-align: center;">_ _ _ _</th>
+<th style="text-align: center;">_ _ _ _</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">coefficient de proportionnalité</td>
+<td style="text-align: center;">_ _ _ _</td>
+<td style="text-align: center;">_ _ _ _</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">_ _ _ _ _ _ _ _ _</td>
+<td style="text-align: center;">_ _ _ _</td>
+<td style="text-align: center;">_ _ _ _</td>
+</tr>
+</tbody>
+</table>
+<p>Déterminez le coefficient de proportionnalité<br />
+ </p>
+<hr />
+<p>Répondez maintenant à la question posée<br />
+ </p>
+<hr />
+<h2 data-number="9.11" id="exercice-11"><span class="header-section-number">9.11</span> Exercice 11</h2>
+<p>Un globule blanc monocyte est un disque de 0,002 mm de diamètre. On souhaite en faire un dessin à l’échelle 25000. Calculez le diamètre du disque à représenter à cette échelle. On donnera une réponse en cm.</p>
+<p>Donnez le nom des deux grandeurs que vous devez utiliser pour résoudre ce problème.<br />
+ </p>
+<hr />
+<p>Remplissez ce tableau de proportionnalité :</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">_ _ _ _ _ _ _ _ _</th>
+<th style="text-align: center;">_ _ _ _</th>
+<th style="text-align: center;">_ _ _ _</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">coefficient de proportionnalité</td>
+<td style="text-align: center;">_ _ _ _</td>
+<td style="text-align: center;">_ _ _ _</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">_ _ _ _ _ _ _ _ _</td>
+<td style="text-align: center;">_ _ _ _</td>
+<td style="text-align: center;">_ _ _ _</td>
+</tr>
+</tbody>
+</table>
+<p>Déterminez le coefficient de proportionnalité<br />
+ </p>
+<hr />
+<p>Répondez maintenant à la question posée<br />
+ </p>
+<hr />
+</body>
+</html>

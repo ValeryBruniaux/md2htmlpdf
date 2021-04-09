@@ -1,0 +1,114 @@
+#!/bin/bash
+
+# Author : Valéry Bruniaux
+
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+Version=1.1
+author="Your Default Name"
+PageSize="A4"
+PageOrientation="Portrait"
+TopMargin="0.75cm"
+BottomMargin="1cm"
+LeftMargin="1cm"
+RightMargin="1cm"
+FooterFont="Bell MT"
+FooterSize="8"
+StyleTemplate="$1"
+StyleCss="$2"
+Title=`echo $3 | cut -f1 -d'.'`
+TmpFile="/tmp/md2htmlpdf.tmp"
+
+if [[ $# -lt 1 || $# -gt 3 ]]; then
+		echo "============================================================="
+		echo "==> md2htmlpdf require 1, 2 or 3 arguments"
+		echo "============================================================="
+		echo "Usage with 1 argument : md2htmlpdf markdownFile.md"
+		echo "Example : md2htmlpdf examples/proportionnalite.md"
+		echo "============================================================="
+		echo "Usage with 2 arguments : md2htmlpdf cssFile.css markdownFile.md"
+		echo "Example : md2htmlpdf css/lesson.css examples/proportionnalite.md"
+		echo "============================================================="
+		echo "Usage with 3 arguments : md2htmlpdf templateFile.template cssFile.css markdownFile.md"
+		echo "1) Template file to apply"
+		echo "2) Css file to apply"
+		echo "3) Markdown file to convert"
+		echo "Example : md2htmlpdf templates/lesson.template css/lesson.css examples/proportionnalite.md"
+		echo "============================================================="
+		exit 1
+fi
+
+if [ $# -eq 1 ]; then
+	Title=`echo $1 | cut -f1 -d'.'`
+	StyleTemplate="$HOME/.config/md2htmlpdf/templates/default.template"
+	StyleCss="$HOME/.config/md2htmlpdf/css/default.css"
+	echo "============================================================="
+	echo "=> You invoque md2htmlpdf with default template and css files"
+	echo "============================================================="
+fi
+
+if [ $# -eq 2 ]; then
+	StyleCss="$1"
+	Title=`echo $2 | cut -f1 -d'.'`
+	StyleTemplate="$HOME/.config/md2htmlpdf/templates/default.template"
+	echo "============================================================="
+	echo "=> You invoque md2htmlpdf with default template file"
+	echo "============================================================="
+fi
+
+echo "============================================================="
+echo "=> Processing Markdown file : "$Title".md"
+echo "=> Make html file : $Title.htlm"
+echo "=> With Template file : $StyleTemplate"
+echo "=> And CSS file : $StyleCss"
+echo "============================================================="
+
+#pandoc "$Title".md --from=markdown+emoji --to=html5 --self-contained --highlight-style=tango --template="$StyleTemplate" -c "$StyleCss" --number-sections --standalone --webtex="http://latex.codecogs.com/svg.latex?" -o "$Title".html
+
+# Test Pandoc to pdf 
+# pandoc "$Title".md --from=markdown+emoji --pdf-engine=wkhtmltopdf --highlight-style=tango -c "$StyleCss" --number-sections --webtex="http://latex.codecogs.com/svg.latex?" -o "$Title".pdf
+
+# Yaml
+pandoc "$Title".md --from=markdown+emoji+yaml_metadata_block+lists_without_preceding_blankline --to=html5 --self-contained --highlight-style=tango --template="$StyleTemplate" -c "$StyleCss" --number-sections --standalone --webtex="https://latex.codecogs.com/svg.latex?" -o "$Title".html
+
+echo "============================================================="
+echo "=> Make PDF file : $Title.pdf ..."
+echo "============================================================="
+
+# === Extract Author name from YAML block
+head -n $(sed -n '/---/=' "$Title.md" | head -2 | tail -1) "$Title.md" > $TmpFile
+parse_yaml() {
+   local prefix=$2
+   local s='[[:space:]]*' w='[a-zA-Z0-9_]*' fs=$(echo @|tr @ '\034')
+   sed -ne "s|^\($s\)\($w\)$s:$s\"\(.*\)\"$s\$|\1$fs\2$fs\3|p" \
+        -e "s|^\($s\)\($w\)$s:$s\(.*\)$s\$|\1$fs\2$fs\3|p"  $1 |
+   awk -F$fs '{
+      indent = length($1)/2;
+      vname[indent] = $2;
+      for (i in vname) {if (i > indent) {delete vname[i]}}
+      if (length($3) > 0) {
+         vn=""; for (i=0; i<indent; i++) {vn=(vn)(vname[i])("_")}
+         printf("%s%s%s=\"%s\"\n", "'$prefix'",vn, $2, $3);
+      }
+   }'
+}
+eval $(parse_yaml $TmpFile "")
+rm $TmpFile
+# ===
+
+#pandoc block
+#author=$(head -2 "$Title".md | tail -1)
+#author=${author:2}
+
+wkhtmltopdf --encoding 'utf-8' --print-media-type --footer-line --footer-spacing 2 --footer-font-name "$FooterFont" --footer-font-size "$FooterSize" --footer-left "$author" --footer-right "[page] / [topage]" --margin-top "$TopMargin" --margin-left "$LeftMargin" --margin-right "$RightMargin" --margin-bottom "$BottomMargin" -O "$PageOrientation" -s "$PageSize" --javascript-delay 500 --no-stop-slow-scripts "$Title".html "$Title".pdf
